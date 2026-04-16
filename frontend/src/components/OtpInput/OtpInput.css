@@ -1,0 +1,258 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   OtpInput.css — styles pour les 3 variants : default | co | ao
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Base commune ────────────────────────────────────────────────────────── */
+.otp-root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.otp-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.otp-cell {
+  text-align: center;
+  font-weight: 700;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.15s;
+  cursor: text;
+}
+
+.otp-cell--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.otp-cell--error {
+  border-color: #dc2626 !important;
+  background: #fff5f5 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   VARIANT "co" — ClientOnboarding
+   Cases serrées, petites, fond beige clair, border fine
+   ──────────────────────────────────────────────────────────────────────── */
+
+.otp-root--co {
+  gap: 8px;
+}
+
+.otp-row--co {
+  gap: 8px;
+  justify-content: flex-start; /* aligné à gauche comme dans la capture */
+}
+
+.otp-cell--co {
+  width: 46px;
+  height: 52px;
+  font-size: 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  color: #1a2e44;
+  background: #fafaf8;
+  border: 1.5px solid #e0d8cc;
+}
+
+.otp-cell--co:focus {
+  border-color: #1a2e44;
+  box-shadow: 0 0 0 3px rgba(26, 46, 68, 0.1);
+  background: white;
+}
+
+.otp-cell--filled-co {
+  border-color: #c9a84c;
+  background: #fffdf5;
+}
+
+.otp-label--co {
+  font-size: 10px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.otp-error--co {
+  font-size: 13px;
+  color: #dc2626;
+  background: #fef2f2;
+  border-left: 3px solid #dc2626;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.otp-resend--co {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.otp-resend-cd--co {
+  color: #888;
+  font-size: 13px;
+}
+
+.otp-resend-btn--co {
+  background: none;
+  border: none;
+  color: #1a2e44;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.otp-resend-btn--co:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   VARIANT "ao" — AvocatOnboarding
+   Grandes cases, police Cormorant serif, fond blanc cassé, centrées
+   ──────────────────────────────────────────────────────────────────────── */
+
+.otp-root--ao {
+  gap: 12px;
+}
+
+.otp-row--ao {
+  gap: 10px;
+  justify-content: center;
+}
+
+.otp-cell--ao {
+  width: 52px;
+  height: 60px;
+  font-size: 26px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+  color: #1e3a5f;
+  background: #fafaf8;
+  border: 2px solid #e0d8cc;
+}
+
+.otp-cell--ao:focus {
+  border-color: #1e3a5f;
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
+  background: white;
+}
+
+.otp-cell--filled-ao {
+  border-color: #c2852a;
+  background: #fffbf3;
+}
+
+.otp-label--ao {
+  font-size: 10px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.otp-error--ao {
+  font-size: 13px;
+  color: #dc2626;
+  background: #fef2f2;
+  border-left: 3px solid #dc2626;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.otp-resend--ao {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.otp-resend-cd--ao {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.otp-resend-btn--ao {
+  background: none;
+  border: none;
+  color: #1e3a5f;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.otp-resend-btn--ao:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   VARIANT "default" — style neutre de fallback
+   ──────────────────────────────────────────────────────────────────────── */
+
+.otp-row--default {
+  gap: 10px;
+  justify-content: center;
+}
+
+.otp-cell--default {
+  width: 48px;
+  height: 56px;
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #333;
+  background: white;
+  border: 1.5px solid #ddd;
+}
+
+.otp-cell--default:focus {
+  border-color: #555;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+.otp-cell--filled-default {
+  border-color: #888;
+}
+
+.otp-label--default {
+  font-size: 12px;
+  color: #555;
+  font-weight: 600;
+}
+
+.otp-error--default {
+  font-size: 13px;
+  color: #dc2626;
+  padding: 6px 10px;
+  background: #fef2f2;
+  border-radius: 6px;
+}
+
+.otp-resend--default {
+  text-align: center;
+  font-size: 13px;
+}
+
+.otp-resend-cd--default {
+  color: #aaa;
+}
+
+.otp-resend-btn--default {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}

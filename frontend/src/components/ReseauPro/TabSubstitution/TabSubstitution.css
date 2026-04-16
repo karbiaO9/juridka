@@ -1,0 +1,14 @@
+@import '../shared.css';
+
+/* ── Contexte substitution ─────────────────────── */
+.rp-sub-contexte {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--av-text2, #6b6456);
+  background: var(--av-bg, #f5f4f0);
+  border-left: 3px solid var(--av-gold, #b8912a);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 12px;
+  line-height: 1.55;
+}

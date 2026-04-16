@@ -1,0 +1,501 @@
+/* ============================================================
+   RegistrationForm.css — Juridika.tn Registration Section
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* ---------- Variables ---------- */
+.rf-section {
+  --rf-bg: #0b1422;
+  --rf-card-bg: rgba(13, 22, 38, 0.95);
+  --rf-input-bg: rgba(255, 255, 255, 0.04);
+  --rf-input-bg-focus: rgba(255, 255, 255, 0.07);
+  --rf-gold: #c9972c;
+  --rf-gold-light: #e6b84a;
+  --rf-gold-muted: rgba(201, 151, 44, 0.18);
+  --rf-white: #f0ece3;
+  --rf-muted: rgba(240, 236, 227, 0.5);
+  --rf-border: rgba(255, 255, 255, 0.1);
+  --rf-border-focus: rgba(201, 151, 44, 0.5);
+  --rf-error: #e05a5a;
+  --rf-font-display: 'Cormorant Garamond', Georgia, serif;
+  --rf-font-body: 'Plus Jakarta Sans', sans-serif;
+  --rf-radius: 14px;
+  --rf-radius-sm: 8px;
+}
+
+/* ---------- Section ---------- */
+.rf-section {
+  position: relative;
+  background: #162437;
+  padding: 100px 24px 120px;
+  overflow: hidden;
+}
+
+/* ---------- Orbs ---------- */
+.rf-bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+}
+
+.rf-bg-orb--1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(201, 151, 44, 0.09) 0%, transparent 70%);
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rf-bg-orb--2 {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(20, 60, 140, 0.1) 0%, transparent 70%);
+  bottom: 40px;
+  right: 5%;
+}
+
+/* ---------- Container ---------- */
+.rf-container {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ---------- Header ---------- */
+.rf-header {
+  text-align: center;
+  margin-bottom: 36px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.rf-section--visible .rf-header {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rf-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.rf-label__line {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--rf-gold);
+  opacity: 0.7;
+}
+
+.rf-label__text {
+  font-family: var(--rf-font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--rf-gold);
+  text-transform: uppercase;
+}
+
+.rf-headline {
+  font-family: var(--rf-font-display);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--rf-white);
+  margin: 0;
+  line-height: 1.15;
+}
+
+.rf-headline__accent {
+  font-style: italic;
+  background: linear-gradient(135deg, var(--rf-gold) 0%, var(--rf-gold-light) 60%, #f0d080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------- Form Card ---------- */
+.rf-card {
+  width: 100%;
+  background: var(--rf-card-bg);
+  border: 1px solid rgba(201, 151, 44, 0.2);
+  border-radius: 20px;
+  padding: 36px 36px 28px;
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 8px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(201, 151, 44, 0.06) inset;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease 0.12s, transform 0.8s ease 0.12s;
+}
+
+.rf-section--visible .rf-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Spots Banner ---------- */
+.rf-spots-banner {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--rf-border);
+  border-radius: 99px;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: var(--rf-font-body);
+  font-size: 0.85rem;
+  color: var(--rf-muted);
+}
+
+.rf-spots-banner__number {
+  font-family: var(--rf-font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--rf-gold-light);
+  margin: 0 2px;
+}
+
+/* ---------- Row ---------- */
+.rf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ---------- Field ---------- */
+.rf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rf-label-field {
+  font-family: var(--rf-font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--rf-white);
+  display: flex;
+  gap: 3px;
+}
+
+.rf-required {
+  color: var(--rf-gold);
+}
+
+/* ---------- Input ---------- */
+.rf-input {
+  background: var(--rf-input-bg);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-sm);
+  padding: 12px 14px;
+  font-family: var(--rf-font-body);
+  font-size: 0.875rem;
+  color: var(--rf-white);
+  outline: none;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rf-input::placeholder {
+  color: rgba(240, 236, 227, 0.25);
+}
+
+.rf-input:focus {
+  border-color: var(--rf-border-focus);
+  background: var(--rf-input-bg-focus);
+  box-shadow: 0 0 0 3px rgba(201, 151, 44, 0.1);
+}
+
+.rf-field--error .rf-input,
+.rf-field--error .rf-select {
+  border-color: var(--rf-error);
+}
+
+.rf-error {
+  font-family: var(--rf-font-body);
+  font-size: 0.72rem;
+  color: var(--rf-error);
+}
+
+/* ---------- Select ---------- */
+.rf-select-wrap {
+  position: relative;
+}
+
+.rf-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--rf-input-bg);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-sm);
+  padding: 12px 40px 12px 14px;
+  font-family: var(--rf-font-body);
+  font-size: 0.875rem;
+  color: var(--rf-white);
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.rf-select:focus {
+  border-color: var(--rf-border-focus);
+  background: var(--rf-input-bg-focus);
+  box-shadow: 0 0 0 3px rgba(201, 151, 44, 0.1);
+}
+
+.rf-select option {
+  background: #0d1520;
+  color: var(--rf-white);
+}
+
+.rf-select-arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--rf-gold);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+/* ---------- Plan Selector ---------- */
+.rf-plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.rf-plan-btn {
+  background: var(--rf-input-bg);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-sm);
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.rf-plan-btn:hover {
+  border-color: rgba(201, 151, 44, 0.35);
+  background: rgba(201, 151, 44, 0.06);
+}
+
+.rf-plan-btn--active {
+  border-color: var(--rf-gold);
+  background: rgba(201, 151, 44, 0.12);
+  box-shadow: 0 0 0 1px rgba(201, 151, 44, 0.2) inset;
+}
+
+.rf-plan-btn__name {
+  font-family: var(--rf-font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--rf-white);
+}
+
+.rf-plan-btn--active .rf-plan-btn__name {
+  color: var(--rf-gold-light);
+}
+
+.rf-plan-btn__price {
+  font-family: var(--rf-font-body);
+  font-size: 0.72rem;
+  color: var(--rf-muted);
+}
+
+.rf-plan-btn--active .rf-plan-btn__price {
+  color: var(--rf-gold);
+}
+
+/* ---------- Checkboxes ---------- */
+.rf-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rf-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.rf-check__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rf-check__box {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1.5px solid var(--rf-border);
+  background: var(--rf-input-bg);
+  flex-shrink: 0;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+}
+
+.rf-check__input:checked + .rf-check__box {
+  background: var(--rf-gold);
+  border-color: var(--rf-gold);
+}
+
+.rf-check__input:checked + .rf-check__box::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #0d1520;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translateY(-1px);
+}
+
+.rf-check--error .rf-check__box {
+  border-color: var(--rf-error);
+}
+
+.rf-check__text {
+  font-family: var(--rf-font-body);
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: var(--rf-muted);
+}
+
+.rf-link {
+  color: var(--rf-gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.rf-link:hover {
+  color: var(--rf-gold-light);
+}
+
+/* ---------- Submit Button ---------- */
+.rf-submit {
+  width: 100%;
+  background: linear-gradient(135deg, var(--rf-gold) 0%, #a07020 100%);
+  color: #0d1520;
+  font-family: var(--rf-font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 16px 24px;
+  border: none;
+  border-radius: var(--rf-radius-sm);
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 20px rgba(201, 151, 44, 0.35);
+  transition: background 0.25s, transform 0.18s, box-shadow 0.25s;
+}
+
+.rf-submit:hover {
+  background: linear-gradient(135deg, var(--rf-gold-light) 0%, var(--rf-gold) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(201, 151, 44, 0.5);
+}
+
+.rf-submit:active {
+  transform: translateY(0);
+}
+
+/* ---------- Trust line ---------- */
+.rf-trust {
+  font-family: var(--rf-font-body);
+  font-size: 0.72rem;
+  color: rgba(240, 236, 227, 0.3);
+  text-align: center;
+  margin: 0;
+  padding-top: 4px;
+}
+
+/* ---------- Success State ---------- */
+.rf-success {
+  background: var(--rf-card-bg);
+  border: 1px solid rgba(201, 151, 44, 0.25);
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rf-success__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--rf-gold-muted);
+  border: 2px solid var(--rf-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--rf-gold-light);
+}
+
+.rf-success__title {
+  font-family: var(--rf-font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--rf-white);
+  margin: 0;
+}
+
+.rf-success__desc {
+  font-family: var(--rf-font-body);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--rf-muted);
+  max-width: 420px;
+  margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 560px) {
+  .rf-card {
+    padding: 24px 20px 20px;
+  }
+
+  .rf-row {
+    grid-template-columns: 1fr;
+  }
+
+  .rf-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .rf-headline {
+    font-size: 1.7rem;
+  }
+}

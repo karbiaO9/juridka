@@ -1,0 +1,520 @@
+/* Reuse all ao-* styles from AvocatOnboarding */
+@import url('../../Avocatonboarding/Avocatonboarding.css');
+
+/* ── Founding-member overrides ─────────────────────────────────────────────── */
+
+/* Gold accent on the page background strip */
+.fo-page {
+  min-height: 100vh;
+  background: #f5f0e8;
+  font-family: 'DM Sans', sans-serif;
+  padding-bottom: 60px;
+}
+
+/* Founding badge banner at top of card header */
+.fo-founder-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #b8860b 0%, #d4a017 50%, #c2852a 100%);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* Plan card founding variant */
+.fo-plan-card {
+  border: 2px solid #e5e0d5;
+  border-radius: 14px;
+  padding: 20px 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  background: #fff;
+}
+
+.fo-plan-card:hover {
+  border-color: #c2852a;
+  box-shadow: 0 4px 20px rgba(194, 133, 42, 0.12);
+}
+
+.fo-plan-card--active {
+  border-color: #c2852a;
+  background: linear-gradient(135deg, rgba(194,133,42,0.04) 0%, rgba(212,160,23,0.06) 100%);
+  box-shadow: 0 4px 20px rgba(194, 133, 42, 0.18);
+}
+
+.fo-plan-card--highlight {
+  border-color: #c2852a;
+}
+
+.fo-plan-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #b8860b, #d4a017);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.fo-plan-check {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #c2852a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.fo-plan-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1e3a5f;
+  margin-bottom: 6px;
+}
+
+.fo-plan-price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #c2852a;
+  line-height: 1;
+}
+
+.fo-plan-price-unit {
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+}
+
+.fo-plan-monthly {
+  font-size: 12px;
+  color: #888;
+  margin: 4px 0 12px;
+}
+
+.fo-plan-discount {
+  display: inline-block;
+  background: rgba(194,133,42,0.12);
+  color: #b8860b;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.fo-plan-feature {
+  font-size: 12px;
+  color: #4a5568;
+  padding: 3px 0;
+}
+
+.fo-plan-feature::before {
+  content: "✓ ";
+  color: #c2852a;
+  font-weight: 700;
+}
+
+.fo-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+  .fo-plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Submit step — no payment box */
+.fo-submit-box {
+  border: 1.5px solid rgba(194,133,42,0.3);
+  border-radius: 14px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(194,133,42,0.04), rgba(212,160,23,0.06));
+  margin-bottom: 16px;
+}
+
+.fo-submit-box-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c2852a;
+  margin-bottom: 12px;
+}
+
+.fo-submit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  font-size: 14px;
+  color: #333;
+}
+
+.fo-submit-row:last-child {
+  border-bottom: none;
+}
+
+.fo-submit-row-label {
+  color: #888;
+}
+
+.fo-submit-row-val {
+  font-weight: 600;
+  color: #1e3a5f;
+}
+
+/* No payment notice */
+.fo-no-payment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 13px;
+  color: #166534;
+  margin-bottom: 16px;
+}
+
+/* Success / confirmation screen */
+.fo-success-center {
+  text-align: center;
+  padding: 24px 0 8px;
+}
+
+.fo-success-icon {
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+
+.fo-success-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-bottom: 8px;
+}
+
+.fo-success-sub {
+  font-size: 14px;
+  color: #666;
+  max-width: 380px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+
+.fo-success-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 0;
+  text-align: left;
+}
+
+.fo-success-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: #444;
+}
+
+.fo-success-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.fo-success-dot--done {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.fo-success-dot--pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.fo-number-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8e 100%);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.fo-number-badge__label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 6px;
+}
+
+.fo-number-badge__num {
+  font-size: 42px;
+  font-weight: 700;
+  color: #d4a017;
+  letter-spacing: 0.04em;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.fo-number-badge__desc {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 4px;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   MISSING ao-* CLASSES — used in FoundingOnboarding but absent
+   from Avocatonboarding.css
+══════════════════════════════════════════════════════════════════ */
+
+/* ── Step 1 — Phone wrap ─────────────────────────────────────────── */
+.ao-phone-wrap {
+  display: flex;
+}
+
+/* ── Step 1 — WhatsApp checkbox row ──────────────────────────────── */
+.ao-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
+
+.ao-checkbox-row input[type="checkbox"] {
+  accent-color: #1e3a5f;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+/* ── Step 2 — OTP ────────────────────────────────────────────────── */
+.ao-otp-desc {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 8px 4px;
+}
+
+.ao-otp-error {
+  color: #dc2626;
+  font-size: 12px;
+  text-align: center;
+  margin-top: -6px;
+}
+
+.ao-otp-resend {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.ao-otp-resend-cd {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* ── Step 3 — Label hint (max 3) ─────────────────────────────────── */
+.ao-label-hint {
+  font-weight: 400;
+  color: #aaa;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 10px;
+}
+
+/* ── Step 5 — Photo drop zone ────────────────────────────────────── */
+.ao-photo-drop {
+  border: 2px dashed #e0d8cc;
+  border-radius: 12px;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  background: #fafaf8;
+  transition: border-color 0.2s, background 0.2s;
+  text-align: center;
+}
+
+.ao-photo-drop:hover {
+  border-color: #c2852a;
+  background: #fff8ee;
+}
+
+/* ── Step 5 — Photo compare (original vs enhanced) ───────────────── */
+.ao-photo-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.ao-photo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ao-photo-col-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+.ao-photo-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e0d8cc;
+}
+
+/* ── Step 6 — Availability grid ──────────────────────────────────── */
+.ao-avail-grid {
+  overflow-x: auto;
+  border: 1px solid #f0ece6;
+  border-radius: 10px;
+}
+
+.ao-avail-header-row {
+  display: flex;
+  border-bottom: 1px solid #f0ece6;
+  background: #fafaf8;
+}
+
+.ao-avail-corner {
+  width: 52px;
+  flex-shrink: 0;
+  border-right: 1px solid #f0ece6;
+}
+
+.ao-avail-hour {
+  flex: 1;
+  min-width: 46px;
+  padding: 6px 2px;
+  font-size: 10px;
+  color: #aaa;
+  font-weight: 600;
+  text-align: center;
+  border-right: 1px solid #f0ece6;
+}
+
+.ao-avail-row {
+  display: flex;
+  border-bottom: 1px solid #f0ece6;
+}
+
+.ao-avail-row:last-child {
+  border-bottom: none;
+}
+
+.ao-avail-day-label {
+  width: 52px;
+  flex-shrink: 0;
+  padding: 0 8px;
+  font-size: 11px;
+  color: #888;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #f0ece6;
+  background: #fafaf8;
+}
+
+.ao-avail-cell {
+  flex: 1;
+  min-width: 46px;
+  height: 32px;
+  border-right: 1px solid #f0ece6;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.ao-avail-cell:last-child {
+  border-right: none;
+}
+
+.ao-avail-cell:hover {
+  background: rgba(194, 133, 42, 0.1);
+}
+
+.ao-avail-cell--on {
+  background: #1e3a5f;
+}
+
+.ao-avail-cell--on:hover {
+  background: #2d5a8e;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .ao-grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .ao-card-header {
+    padding: 20px 20px;
+  }
+
+  .ao-card-body {
+    padding: 20px 20px;
+  }
+
+  .ao-card-footer {
+    padding: 14px 20px;
+  }
+
+  .ao-photo-compare {
+    grid-template-columns: 1fr;
+  }
+
+  .fo-plans-grid {
+    grid-template-columns: 1fr;
+  }
+}

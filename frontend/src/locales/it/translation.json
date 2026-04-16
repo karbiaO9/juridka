@@ -1,0 +1,1827 @@
+{
+	"welcome": "Benvenuti su Juridika",
+	"nav": {
+		"brandName": "Juridika",
+		"home": "Home",
+		"comment": "Come funziona",
+		"clients": "Per i clienti",
+		"avocats": "Per gli avvocati",
+		"diaspora": "Diaspora",
+		"urgence": "Emergenza 24/7",
+		"login": "Accedi",
+		"signup": "Registrati",
+		"dashboard": "Dashboard",
+		"logout": "Esci",
+		"profile": "Profilo",
+		"settings": "Impostazioni",
+		"help": "Aiuto",
+		"support": "Supporto",
+		"notifications": "Notifiche",
+		"messages": "Messaggi",
+		"menu": "Menu"
+	},
+	"logo": {
+		"brandName": "Juridika",
+		"goToHomepage": "Vai alla home page"
+	},
+	"form": {
+		"hidePassword": "Nascondi password",
+		"showPassword": "Mostra password",
+		"label": "RISERVA IL TUO POSTO",
+		"headline_prefix": "Mi unisco ai",
+		"headline_accent": "Membri Fondatori",
+		"spots_prefix": "Rimangono",
+		"spots_suffix": "posti fondatori su 50",
+		"prenom": "Nome",
+		"prenom_placeholder": "Sarra",
+		"nom": "Cognome",
+		"nom_placeholder": "Ben Salah",
+		"email": "Email professionale",
+		"email_placeholder": "sarra.bensalah@cabinet.tn",
+		"telephone": "Telefono",
+		"tel_placeholder": "+216 XX XXX XXX",
+		"barreau": "Ordine degli avvocati",
+		"barreau_placeholder": "— Seleziona —",
+		"offre": "Offerta scelta",
+		"plan_essentiel": "Essenziale",
+		"price_essentiel": "504 DT/anno",
+		"plan_professionnel": "Professionale",
+		"price_professionnel": "756 DT/anno",
+		"plan_cabinet": "Studio",
+		"price_cabinet": "1.512 DT/anno",
+		"check_onat": "Confermo di essere un avvocato iscritto all'ONAT e mi impegno a fornire i miei documenti giustificativi (licenza, diploma) durante la verifica del mio profilo.",
+		"learn_more": "Per saperne di più",
+		"check_contact": "Accetto che Juridika.tn mi contatti per confermare la mia iscrizione e attivare il mio account fondatore.",
+		"submit": "Riserva il mio posto fondatore",
+		"trust": "Nessun pagamento ora · Attivazione al lancio · Tariffa garantita da contratto",
+		"err_required": "Campo obbligatorio",
+		"err_email": "Email non valida",
+		"err_select": "Seleziona un'opzione",
+		"success_title": "Posto riservato!",
+		"success_desc": "Riceverai un'email di conferma entro 24 ore. Benvenuto tra i Membri Fondatori di Juridika.tn."
+	},
+	"legalPlatform": "Piattaforma Legale",
+	"login": {
+		"nav": {
+			"noAccount": "Non hai un account?",
+			"register": "Registrati"
+		},
+		"header": {
+			"title": "Bentornato su",
+			"titleItalic": "Juridika"
+		},
+		"card": {
+			"title": "Accedi",
+			"subtitle": "Inserisci le tue credenziali per continuare"
+		},
+		"fields": {
+			"email": {
+				"label": "Indirizzo email",
+				"placeholder": "tua@email.tn"
+			},
+			"password": {
+				"label": "Password",
+				"placeholder": "••••••••••••",
+				"forgot": "Password dimenticata?",
+				"show": "Mostra password",
+				"hide": "Nascondi password"
+			},
+			"rememberMe": "Ricordami"
+		},
+		"error": {
+			"required": "Compila tutti i campi.",
+			"invalid": "Credenziali errate. Riprova."
+		},
+		"submit": "Accedi",
+		"or": "o",
+		"registerPrompt": "Non hai un account?",
+		"registerLink": "Crea un account",
+		"footer": {
+			"privacyNote": "I tuoi dati sono protetti e crittografati."
+		}
+	},
+	"signup": "Registrati",
+	"home": "Home",
+	"about": "Chi siamo",
+	"contact": {
+		"hero": {
+			"tag": "Contatti",
+			"title": "Siamo qui<br/>per ascoltarti",
+			"subtitle": "Una domanda, una richiesta o hai bisogno di aiuto? Il nostro team ti risponderà il prima possibile."
+		},
+		"form": {
+			"title": "Inviaci un messaggio",
+			"subtitle": "Compila il modulo sottostante e ti risponderemo entro 24 ore.",
+			"name": {
+				"label": "Nome completo",
+				"placeholder": "Il tuo nome completo"
+			},
+			"email": {
+				"label": "Indirizzo email",
+				"placeholder": "tua@email.com"
+			},
+			"message": {
+				"label": "Messaggio",
+				"placeholder": "Descrivi la tua richiesta in dettaglio…"
+			},
+			"submit": {
+				"label": "Invia messaggio",
+				"loading": "Invio in corso…"
+			},
+			"success": {
+				"title": "Messaggio inviato!",
+				"message": "Grazie per averci contattato. Il nostro team ti risponderà il prima possibile.",
+				"reset": "Invia un altro messaggio"
+			}
+		}
+	},
+	"dashboard": "Dashboard",
+	"logout_label": "Esci",
+	"publicRoute": {
+		"loading": "Caricamento..."
+	},
+	"auth": {
+		"invalidCredentials": "Email o password errata"
+	},
+	"common": {
+		"errorPrefix": "Errore:",
+		"success": "Successo",
+		"error": "Errore",
+		"warning": "Avviso",
+		"info": "Informazione",
+		"confirm": "Conferma",
+		"yes": "Sì",
+		"no": "No",
+		"ok": "OK",
+		"close": "Chiudi",
+		"submit": "Invia",
+		"reset": "Reimposta",
+		"clear": "Cancella",
+		"search": "Cerca",
+		"filter": "Filtra",
+		"sort": "Ordina",
+		"view": "Visualizza",
+		"edit": "Modifica",
+		"delete": "Elimina",
+		"add": "Aggiungi",
+		"remove": "Rimuovi",
+		"update": "Aggiorna",
+		"refresh": "Aggiorna",
+		"reload": "Ricarica",
+		"loading": "Caricamento...",
+		"saving": "Salvataggio...",
+		"processing": "Elaborazione...",
+		"please_wait": "Attendere prego...",
+		"try_again": "Riprova",
+		"not_available": "Non disponibile",
+		"coming_soon": "Prossimamente",
+		"under_construction": "In costruzione"
+	},
+	"notFound": {
+		"title": "Scusa! Pagina non trovata",
+		"backToHome": "Torna alla home",
+		"description": "La pagina che stai cercando non esiste o è stata spostata o eliminata.",
+		"goBack": "Torna alla pagina precedente"
+	},
+	"authErrors": {
+		"accountCreationError": "Errore durante la creazione dell'account",
+		"emailAlreadyExists": "Questa email è già registrata. Usa un'altra email o prova ad accedere.",
+		"userNotFound": "Nessun account trovato con questo indirizzo email.",
+		"invalidCredentials": "Email o password non valida.",
+		"registrationFailed": "Registrazione fallita. Riprova."
+	},
+	"homepage": {
+		"title": "Trova e prenota un avvocato [[verificato]] in Tunisia",
+		"subtitle": "Consultazioni orientative con avvocati certificati dall'ONAT. Pagamento diretto allo studio — nessuna commissione, nessuna pubblicità.",
+		"createProfile": "Crea il mio profilo →",
+		"iAmLawyer": "Sono un avvocato",
+		"searchPlaceholder": "Nome dell'avvocato",
+		"searchButton": "Cerca",
+		"howItWorks": {
+			"preTitle": "Unisciti",
+			"title": "Attiva il tuo profilo in 3 passaggi",
+			"cta": "Unisciti alla rete →",
+			"step1": {
+				"title": "Registrazione",
+				"desc": "Crea il tuo account con le tue informazioni professionali e scegli il piano di abbonamento. 10 minuti."
+			},
+			"step2": {
+				"title": "Verifica ONAT",
+				"desc": "Invia i tuoi documenti — tessera dell'ordine, diploma, licenza. Il nostro team verifica entro 48 ore lavorative."
+			},
+			"step3": {
+				"title": "Profilo attivo",
+				"desc": "Il tuo profilo è visibile, la tua agenda è attiva. Le prime richieste di appuntamento possono arrivare il giorno successivo."
+			}
+		},
+		"forLawyers": "Per gli avvocati",
+		"whyChooseUs": "Perché sceglierci?",
+		"who": "Nome",
+		"guaranteesSectionTitle": "Le nostre garanzie",
+		"specialty": "Specialità",
+		"where": "Dove",
+		"servicesSectionTitle": "Come funziona?",
+		"verifiedProfessionals": "Professionisti verificati",
+		"verifiedDesc": "Tutti gli avvocati vengono esaminati e verificati prima di essere elencati.",
+		"instantBooking": "Prenotazione immediata",
+		"bookingDesc": "Scegli uno slot e conferma — veloce e sicuro.",
+		"secureCommunication": "Comunicazione sicura",
+		"communicationDesc": "Messaggi crittografati e videoconsultazioni sicure.",
+		"lawyersCount": "1.200+ Avvocati",
+		"appointmentsCount": "25.000+ Appuntamenti",
+		"satisfactionRate": "98% di soddisfazione",
+		"testimonial": "\"Juridika mi ha aiutato a trovare l'avvocato giusto in meno di 10 minuti. La prenotazione era fluida.\"",
+		"testimonialAuthor": "— Samira, Tunisi",
+		"allSpecialties": "Tutte le specialità",
+		"allCities": "Tutte le città",
+		"lawyers": "Avvocati",
+		"appointments": "Appuntamenti",
+		"satisfaction": "Soddisfazione",
+		"assistantJuridique": "Assistente legale",
+		"specialties": {
+			"familyLaw": "Diritto di famiglia",
+			"criminalLaw": "Diritto penale",
+			"businessCorporateLaw": "Diritto commerciale e societario",
+			"employmentLaw": "Diritto del lavoro",
+			"immigrationLaw": "Diritto dell'immigrazione",
+			"propertyRealEstate": "Diritto immobiliare",
+			"contractLaw": "Diritto contrattuale",
+			"personalInjury": "Responsabilità civile",
+			"administrativeLaw": "Diritto amministrativo",
+			"intellectualProperty": "Proprietà intellettuale",
+			"taxLaw": "Diritto tributario",
+			"civilLaw": "Diritto civile"
+		},
+		"cities": {
+			"ariana": "Ariana",
+			"beja": "Béja",
+			"benArous": "Ben Arous",
+			"bizerte": "Biserta",
+			"gabes": "Gabès",
+			"gafsa": "Gafsa",
+			"jendouba": "Jendouba",
+			"kairouan": "Kairouan",
+			"kasserine": "Kasserine",
+			"kebili": "Kebili",
+			"kef": "Kef",
+			"mahdia": "Mahdia",
+			"manouba": "Manouba",
+			"medenine": "Médenine",
+			"monastir": "Monastir",
+			"nabeul": "Nabeul",
+			"sfax": "Sfax",
+			"sidiBouzid": "Sidi Bouzid",
+			"siliana": "Siliana",
+			"sousse": "Sousse",
+			"tataouine": "Tataouine",
+			"tozeur": "Tozeur",
+			"tunis": "Tunisi",
+			"zaghouan": "Zaghouan"
+		},
+		"services": {
+			"findLawyer": {
+				"title": "Trova un avvocato",
+				"desc": "Sfoglia la directory e filtra per specialità o città."
+			},
+			"appointment": {
+				"title": "Appuntamento",
+				"desc": "Scegli uno slot e prenota in pochi clic."
+			},
+			"callback": {
+				"title": "Richiamata",
+				"desc": "Un avvocato ti contatta rapidamente secondo le tue disponibilità."
+			},
+			"video": {
+				"title": "Consulenza",
+				"desc": "Consulta un avvocato in videoconferenza da casa tua."
+			}
+		},
+		"clients": {
+			"preTitle": "I NOSTRI CLIENTI",
+			"title": "Una piattaforma progettata per tutti",
+			"subtitle": "Che tu sia un privato, un'azienda o un tunisino residente all'estero, Juridika.tn risponde alle tue esigenze legali specifiche.",
+			"cards": {
+				"particuliers": {
+					"title": "Privati",
+					"desc": "Primo contratto di lavoro, matrimonio, divorzio, controversie locative, successioni. Accedi all'expertise legale senza le barriere tradizionali.",
+					"cta": "Consulta ora"
+				},
+				"pme": {
+					"title": "PMI e Start-up",
+					"desc": "Costituzione societaria, contratti commerciali, gestione HR, recupero crediti. Trova l'esperto adatto al tuo settore.",
+					"cta": "Consulta ora"
+				},
+				"diaspora": {
+					"title": "Diaspora tunisina",
+					"desc": "Gestisci i tuoi affari in Tunisia dall'estero — immobiliare, successioni, investimenti. Interfaccia multilingue, fusi orari automatici.",
+					"cta": "Scopri di più"
+				}
+			}
+		},
+		"trust": {
+			"preTitle": "IL NOSTRO IMPEGNO",
+			"title": "La fiducia come fondamento",
+			"subtitle": "Il settore legale richiede una fiducia assoluta. Il nostro processo di verifica garantisce che ogni professionista su Juridika sia certificato, in regola e affidabile.",
+			"badge1": "ONAT",
+			"badge2": "VERIFICATO",
+			"cardTitle": "Verifica rigorosa",
+			"cardDesc": "Ogni avvocato registrato viene verificato attraverso i registri dell'Ordine Nazionale degli Avvocati della Tunisia prima dell'attivazione del profilo.",
+			"steps": {
+				"step1": {
+					"title": "Verifica ONAT",
+					"desc": "Tessera dell'ordine, diploma e licenza verificati prima di qualsiasi attivazione del profilo."
+				},
+				"step2": {
+					"title": "Controllo regolare",
+					"desc": "Aggiornamento periodico dei documenti per garantire che ogni avvocato sia ancora in esercizio."
+				},
+				"step3": {
+					"title": "Segnalazione rapida",
+					"desc": "Qualsiasi problema segnalato viene gestito entro 24 ore. I profili non conformi vengono sospesi immediatamente."
+				}
+			}
+		},
+		"pricing": {
+			"preTitle": "SPAZIO AVVOCATI",
+			"title": "Sviluppa la tua attività con Juridika",
+			"subtitle": "Nessuna commissione sui tuoi onorari. Un abbonamento fisso. Una vetrina professionale verificata e una rete di collaborazione tra colleghi.",
+			"recommended": "CONSIGLIATO",
+			"plans": {
+				"gratuit": {
+					"name": "GRATUITO",
+					"price": "0",
+					"period": "Presenza permanente",
+					"feature1": "Profilo verificato ONAT (badge visibile)",
+					"feature2": "Geolocalizzazione dello studio",
+					"feature3": "Numero di telefono visualizzato",
+					"feature4": "Specialità e lingue",
+					"dis1": "Prenotazione appuntamenti online",
+					"dis2": "Calendario e disponibilità",
+					"dis3": "Dashboard e statistiche",
+					"dis4": "Rete Pro",
+					"cta": "Crea il mio profilo gratuito →"
+				},
+				"essentiel": {
+					"name": "ESSENZIALE",
+					"price": "60",
+					"period": "/mese · fatturato annualmente",
+					"trial": "14 GIORNI GRATUITI",
+					"feature1": "Profilo verificato ONAT attivo",
+					"feature2": "Prenotazione appuntamenti online",
+					"feature3": "Calendario disponibilità",
+					"feature4": "Conferme automatiche",
+					"feature5": "Gestione cancellazioni e rinvii",
+					"feature6": "Scheda specialità + lingue parlate",
+					"feature7": "Notifiche clienti via email/SMS",
+					"cta": "Inizia ora →"
+				},
+				"professionnel": {
+					"name": "PROFESSIONALE",
+					"price": "90",
+					"period": "/mese · fatturato annualmente",
+					"feature1": "Tutto ciò che è incluso nell'Essenziale",
+					"feature2": "Maggiore visibilità nei risultati",
+					"feature3": "Supporto videoconferenza",
+					"feature4": "Dashboard analitica",
+					"feature5": "Disponibilità emergenza 24/7 (opt-in)",
+					"feature6": "Accesso prioritario alla Rete Pro",
+					"feature7": "Esportazione agenda (iCal / Google Calendar)",
+					"feature8": "Promemoria automatici clienti post-appuntamento",
+					"cta": "Unisciti alla rete →"
+				},
+				"cabinet": {
+					"name": "STUDIO",
+					"price": "180",
+					"period": "/mese · fino a 3 avvocati",
+					"trial": "14 GIORNI GRATUITI",
+					"feature1": "3 profili verificati sotto un account",
+					"feature2": "Pagina studio dedicata",
+					"feature3": "Account assistente con accesso limitato",
+					"feature4": "Branding personalizzato",
+					"feature5": "Accesso completo alla Rete Pro",
+					"feature6": "Rete Pro per tutti i profili",
+					"feature7": "Fatturazione raggruppata — una fattura mensile",
+					"cta": "Inizia ora →"
+				}
+			},
+			"trial": "Prova gratuita 14 giorni — nessuna carta di credito richiesta. Al termine della prova, l'account passa automaticamente al piano Gratuito se non viene sottoscritto alcun abbonamento.",
+			"payment": {
+				"onlineTitle": "PAGAMENTO ONLINE (KONNECT / FLOUCI)",
+				"online1": "Scegli il tuo piano e procedi al pagamento sicuro.",
+				"online2": "Il tuo account viene attivato automaticamente alla conferma.",
+				"online3": "Una fattura ufficiale viene inviata immediatamente via email.",
+				"virementTitle": "BONIFICO BANCARIO",
+				"virement1": "Effettua il bonifico e carica la ricevuta di pagamento.",
+				"virement2": "Il nostro team convalida il tuo fascicolo entro 24 ore lavorative.",
+				"virement3": "Account attivato + fattura ufficiale inviata via email alla convalida."
+			}
+		},
+		"urgence": {
+			"preTitle": "EMERGENZA LEGALE",
+			"title": "Avvocato d'urgenza, disponibile ora",
+			"desc": "Fermo di polizia, conflitto notturno, incidente commerciale, viaggio d'affari. Avvocati di turno accettano segnalazioni proprio ora. Profilo cliente richiesto.",
+			"cta": "Emergenza 24/7",
+			"note": "Solo orientamento · Pagamento diretto allo studio"
+		},
+		"diaspora": {
+			"preTitle": "TUNISINI ALL'ESTERO",
+			"title": "Gestisci i tuoi affari in Tunisia da qualsiasi posto",
+			"subtitle": "Juridika.tn è progettata per i tunisini residenti all'estero che devono gestire pratiche legali in Tunisia a distanza.",
+			"countries": {
+				"france": "Francia",
+				"italie": "Italia",
+				"allemagne": "Germania",
+				"saoudite": "Arabia Saudita",
+				"emirats": "Emirati",
+				"partout": "E ovunque"
+			},
+			"features": {
+				"langues": {
+					"title": "Interfaccia in 5 lingue",
+					"desc": "Arabo, francese, inglese, italiano, tedesco. Consulta nella lingua più naturale per te."
+				},
+				"fuseaux": {
+					"title": "Fusi orari automatici",
+					"desc": "Le disponibilità vengono visualizzate nel tuo fuso orario. Nessuna confusione durante la prenotazione."
+				},
+				"checklists": {
+					"title": "Checklist pre-consulenza",
+					"desc": "Documenti da preparare in base al tipo di pratica — immobiliare, successioni, costituzione societaria."
+				},
+				"video": {
+					"title": "Consulenza in videoconferenza",
+					"desc": "Incontra il tuo avvocato senza spostarti. Disponibile con gli avvocati abbonati al piano Professionale."
+				}
+			}
+		},
+		"processus": {
+			"preTitle": "PROCESSO",
+			"title": "Prenota una consulenza in 5 semplici passaggi",
+			"subtitle": "Un processo chiaro, trasparente e progettato per rispettare il tuo tempo e la tua riservatezza.",
+			"steps": {
+				"step1": {
+					"title": "Crea il tuo profilo",
+					"desc": "Nome, email, telefono, lingua preferita e consensi. Meno di 3 minuti."
+				},
+				"step2": {
+					"title": "Cerca",
+					"desc": "Filtra per specialità, governatorato e lingua. Tutti i risultati sono verificati."
+				},
+				"step3": {
+					"title": "Scegli",
+					"desc": "Ordinamento neutro per disponibilità e prossimità. Nessun avvocato paga per apparire primo."
+				},
+				"step4": {
+					"title": "Prenota",
+					"desc": "Di persona, telefonicamente o in videoconferenza. Conferma G-1 e H-3."
+				},
+				"step5": {
+					"title": "Paga direttamente",
+					"desc": "Onorari pagati direttamente allo studio. Juridika non prende alcuna commissione."
+				}
+			}
+		},
+		"faq": {
+			"preTitle": "DOMANDE FREQUENTI",
+			"title": "Tutto quello che devi sapere",
+			"items": [
+				{
+					"q": "Perché devo creare un profilo per prenotare?",
+					"a": "Il profilo garantisce la tua sicurezza e quella dell'avvocato, consente i promemoria degli appuntamenti, assicura la tracciabilità degli scambi e protegge la riservatezza delle tue informazioni."
+				},
+				{
+					"q": "Juridika.tn prende una commissione sui miei onorari?",
+					"a": "No. Nessuna commissione, mai. Paghi direttamente allo studio dell'avvocato."
+				},
+				{
+					"q": "Qual è la differenza tra consulenza orientativa e rappresentanza?",
+					"a": "La consulenza orientativa ti aiuta a comprendere la tua situazione legale, i tuoi diritti e le opzioni disponibili. La rappresentanza legale richiede un contratto di onorari separato stipulato direttamente con l'avvocato."
+				},
+				{
+					"q": "Come posso cancellare o rinviare un appuntamento?",
+					"a": "Dal tuo spazio cliente, fino a 24 ore prima dell'appuntamento."
+				},
+				{
+					"q": "I miei dati sono protetti?",
+					"a": "Sì. Tutti i dati sono crittografati e archiviati in conformità con la legislazione tunisina sulla protezione dei dati."
+				},
+				{
+					"q": "Sono all'estero — posso consultare in videoconferenza?",
+					"a": "Sì. Gli avvocati abbonati al piano Professionale offrono consulenze in videoconferenza."
+				}
+			]
+		},
+		"reseauPro": {
+			"preTitle": "Rete Pro",
+			"title": "Una rete chiusa tra avvocati verificati",
+			"subtitle": "Spazio 100% professionale, invisibile ai clienti. Riservato agli abbonati Professionale e Studio.",
+			"feature1": {
+				"title": "Delega pratiche",
+				"desc": "Pubblica un'esigenza — specialità, regione, urgenza. I colleghi disponibili rispondono."
+			},
+			"feature2": {
+				"title": "Sostituzione udienza",
+				"desc": "Indisponibilità improvvisa? Pubblica una richiesta urgente. Un avvocato nella stessa città accetta."
+			},
+			"feature3": {
+				"title": "Rubrica colleghi",
+				"desc": "Cerca un collega per specialità, regione e lingua. Rubrica verificata, riservata agli abbonati."
+			},
+			"card": {
+				"title": "Accesso Rete Pro",
+				"desc": "La Rete Pro è uno spazio chiuso, gestito da Juridika.tn, riservato esclusivamente agli avvocati abbonati.",
+				"plan1": "Professionale",
+				"plan2": "Studio",
+				"note": "Gli onorari di sostituzione o delega vengono concordati direttamente tra avvocati, al di fuori della piattaforma."
+			}
+		},
+		"foundingBanner": "Sei un avvocato? Unisciti ai 50 Membri Fondatori — tariffa −30% garantita a vita"
+	},
+	"adminDashboard": {
+		"dashboard": "Dashboard",
+		"adminConsole": "Console di amministrazione",
+		"manageUsers": "Gestisci utenti, verifiche e impostazioni della piattaforma",
+		"totalLawyers": "Totale avvocati",
+		"verifiedLawyers": "Avvocati verificati",
+		"pendingVerifications": "Verifiche in attesa",
+		"totalClients": "Totale clienti",
+		"loading": "Caricamento...",
+		"noPendingRequests": "Nessuna richiesta di verifica in attesa al momento.",
+		"name": "Nome",
+		"email": "Email",
+		"actions": "Azioni",
+		"viewDetails": "Visualizza dettagli",
+		"approve": "Approva",
+		"reject": "Rifiuta",
+		"processing": "Elaborazione...",
+		"failedToFetchStats": "Impossibile caricare le statistiche",
+		"failedToFetchLawyers": "Impossibile caricare gli avvocati in attesa",
+		"failedToApprove": "Impossibile approvare l'avvocato",
+		"failedToReject": "Impossibile rifiutare l'avvocato",
+		"noData": "Nessun dato"
+	},
+	"logout": {
+		"title": "Disconnetti",
+		"message": "Sei sicuro di voler uscire?",
+		"cancel": "Annulla",
+		"confirm": "Esci"
+	},
+	"deleteConv": {
+		"title": "Elimina conversazione",
+		"message": "Sei sicuro di voler eliminare la conversazione con l'Avv. {{name}}? Questa azione è irreversibile.",
+		"cancel": "Annulla",
+		"confirm": "Elimina"
+	},
+	"footer": {
+		"tagline": "Il riferimento per i servizi legali in Tunisia. Avvocati verificati, appuntamenti semplificati.",
+		"platform": "Piattaforma",
+		"howItWorks": "Come funziona",
+		"urgency": "Emergenza 24/7",
+		"diaspora": "Diaspora",
+		"faq": "FAQ",
+		"lawyers": "Avvocati",
+		"rates": "Tariffe",
+		"register": "Registrati",
+		"proNetwork": "Rete Pro",
+		"legal": "Legale",
+		"privacyPolicy": "Informativa sulla privacy",
+		"terms": "Termini di utilizzo",
+		"contact": "Contatti",
+		"developedBy": "Sviluppato da",
+		"allRightsReserved": "Tutti i diritti riservati."
+	},
+	"lawyerListing": {
+		"pageTitle": "Trova professionisti legali",
+		"lawyersFound": "avvocati trovati",
+		"searchByName": "Cerca per nome",
+		"specialty": "Specialità",
+		"allSpecialties": "Tutte le specialità",
+		"city": "Città",
+		"allCities": "Tutte le città",
+		"search": "Cerca",
+		"clearFilters": "Cancella filtri",
+		"noLawyersFound": "Nessun avvocato trovato",
+		"tryAdjustingSearch": "Prova a modificare i criteri di ricerca o i filtri.",
+		"yearsExp": "anni esp.",
+		"bookAppointment": "Prenota appuntamento",
+		"viewProfile": "Visualizza profilo"
+	},
+	"lawyerProfile": {
+		"loadingLawyerProfile": "Caricamento profilo avvocato...",
+		"backToLawyers": "Torna agli avvocati",
+		"contactInformation": "Informazioni di contatto",
+		"professionalInformation": "Informazioni professionali",
+		"specialization": "Specializzazione",
+		"yearsOfExperience": "Anni di esperienza",
+		"about": "Chi sono",
+		"scheduleConsultation": "Pianifica una consulenza",
+		"bookAppointment": "Prenota appuntamento",
+		"chatOnWhatsApp": "Chatta su WhatsApp",
+		"availabilitySchedule": "Calendario disponibilità",
+		"years": "anni"
+	},
+	"roleSelector": {
+		"nav": {
+			"alreadyMember": "Già registrato?",
+			"login": "Accedi"
+		},
+		"header": {
+			"eyebrow": "Benvenuto su Juridika",
+			"title": "Come vorresti",
+			"titleItalic": "registrarti?",
+			"subtitle": "Scegli il tuo profilo per accedere al percorso di registrazione su misura per le tue esigenze."
+		},
+		"avocat": {
+			"label": "Avvocato",
+			"subtitle": "Professionista legale",
+			"badge": "Professionista certificato",
+			"description": "Unisciti alla comunità degli avvocati tunisini su Juridika, sviluppa la tua clientela e gestisci i tuoi fascicoli online.",
+			"feature1": "Profilo pubblico visibile",
+			"feature2": "Gestione fascicoli",
+			"feature3": "Messaggistica sicura"
+		},
+		"client": {
+			"label": "Cliente",
+			"subtitle": "Privato o azienda",
+			"badge": "Accesso semplificato",
+			"description": "Trova l'avvocato di cui hai bisogno, consulta i loro profili e gestisci i tuoi affari legali con facilità.",
+			"feature1": "Ricerca avvocati",
+			"feature2": "Monitoraggio fascicolo",
+			"feature3": "Consulenza online"
+		},
+		"card": {
+			"stepsInfo": "{{count}} passaggi di registrazione",
+			"cta": "Inizia"
+		},
+		"footer": {
+			"privacyNote": "I tuoi dati sono protetti e non saranno mai condivisi senza il tuo consenso."
+		}
+	},
+	"validation": {
+		"required": "{field} è obbligatorio",
+		"email": "Inserisci un indirizzo email valido",
+		"password": "La password deve contenere almeno 8 caratteri e includere un numero",
+		"passwordMatch": "Le password non corrispondono",
+		"phone": "Inserisci un numero di telefono tunisino valido (+216 seguito da 8 cifre)"
+	},
+	"passwordStrength": {
+		"empty": "",
+		"veryWeak": "Molto debole",
+		"weak": "Debole",
+		"fair": "Discreta",
+		"good": "Buona",
+		"strong": "Forte"
+	},
+	"btn": {
+		"continue": "Continua →",
+		"back": "Indietro",
+		"loading": "Caricamento...",
+		"create_account": "Crea il mio account →",
+		"search_lawyers": "Cerca avvocati →",
+		"see_availability": "Vedi disponibilità →",
+		"confirm_slot": "Conferma lo slot →",
+		"confirm_appointment": "Conferma l'appuntamento ✓",
+		"call_now": "📞 Chiama adesso",
+		"book_priority_slot": "Prenota uno slot prioritario →",
+		"try_another_lawyer": "Prova un altro avvocato",
+		"choose_slot": "Scegli uno slot →",
+		"login_redirect": "Accedi →",
+		"selected": "✓ Selezionato",
+		"choose": "Scegli →",
+		"login": "Accedi"
+	},
+	"filter": {
+		"family": "Famiglia",
+		"criminal": "Penale",
+		"labor": "Lavoro",
+		"commercial": "Commerciale",
+		"immigration": "Immigrazione",
+		"french": "Francese",
+		"arabic": "Arabo",
+		"english": "Inglese",
+		"in_person": "Di persona",
+		"video": "Video",
+		"phone": "Telefono"
+	},
+	"avocatOnboarding": {
+		"nav": {
+			"sub": "Registrazione Avvocato"
+		},
+		"step": {
+			"label": "PASSO {{current}} DI {{total}}"
+		},
+		"step1": {
+			"title": "Creazione Account",
+			"sub": "Le tue informazioni di base"
+		},
+		"step2": {
+			"title": "Verifica Email",
+			"sub": "Inserisci il codice ricevuto via email"
+		},
+		"step3": {
+			"title": "Identità Professionale",
+			"sub": "Ordine, specialità e lingue"
+		},
+		"step4": {
+			"title": "Documenti Giustificativi",
+			"sub": "Carica i tuoi documenti ufficiali"
+		},
+		"step5": {
+			"title": "Foto Profilo",
+			"sub": "Una foto professionale"
+		},
+		"step6": {
+			"title": "Disponibilità & Studio",
+			"sub": "I tuoi orari e la tua posizione"
+		},
+		"step7": {
+			"title": "Anteprima Profilo",
+			"sub": "Controlla il tuo profilo pubblico"
+		},
+		"step8": {
+			"title": "Scegli il tuo Piano",
+			"sub": "Senza impegno — annullabile in qualsiasi momento"
+		},
+		"step9": {
+			"title": "Pagamento & Invio",
+			"sub": "Finalizza la tua registrazione"
+		},
+		"field": {
+			"firstName": "Nome",
+			"lastName": "Cognome",
+			"email": "Indirizzo Email",
+			"phone": "Telefono",
+			"phoneHint": "Numero tunisino a 8 cifre, senza prefisso",
+			"whatsapp": "WhatsApp",
+			"whatsappSame": "Stesso numero del telefono",
+			"whatsappActive": "WhatsApp attivo su questo numero",
+			"password": "Password",
+			"barNumber": "Numero Ordine ONAT",
+			"barNumberHint": "Formato ONAT: XX-AAAA-XXXX (es. TN-2015-1234)",
+			"university": "Governatorato / Ordine",
+			"graduationYear": "Anno di Laurea",
+			"practiceStatus": "Stato di Esercizio",
+			"firmName": "Studio Legale",
+			"optional": "opzionale",
+			"specialties": "Specialità",
+			"max3": "3 massimo",
+			"specialtiesCount": "{{count}}/3 selezionata/e",
+			"languages": "Lingue Parlate",
+			"wilaya": "Governatorato",
+			"quartier": "Quartiere",
+			"address": "Indirizzo Completo",
+			"lat": "Latitudine (GPS)",
+			"lng": "Longitudine (GPS)"
+		},
+		"ph": {
+			"firstName": "Nome",
+			"lastName": "Cognome",
+			"email": "avvocato@esempio.tn",
+			"password": "8 caratteri min. + 1 numero",
+			"firmName": "Nome dello studio legale",
+			"quartier": "Nome del quartiere",
+			"address": "Indirizzo dello studio",
+			"select": "Seleziona..."
+		},
+		"practiceStatus": {
+			"active": "Avvocato iscritto (attivo)",
+			"inactive": "Avvocato iscritto (inattivo)",
+			"trainee": "Avvocato praticante"
+		},
+		"info": {
+			"aes": "Dati crittografati AES-256 — conformità PDPN"
+		},
+		"otp": {
+			"sent": "Un codice a 6 cifre è stato inviato a {{email}}",
+			"resend": "Reinvia il codice"
+		},
+		"identity": {
+			"onatBanner": "Solo gli avvocati iscritti all'ONAT possono registrarsi. Il tuo fascicolo sarà verificato dal nostro team."
+		},
+		"docs": {
+			"info": "Tutti i documenti devono essere leggibili e attualmente validi. Formati accettati: PDF, JPG, PNG.",
+			"carteBarreFront": "Tessera Ordine — Fronte",
+			"carteBarreFrontSub": "Fronte della tua tessera ONAT",
+			"carteBarreBack": "Tessera Ordine — Retro",
+			"carteBarreBackSub": "Retro della tua tessera ONAT",
+			"diplome": "Laurea in Giurisprudenza",
+			"diplomeSub": "Diploma di stato o attestato ufficiale",
+			"patente": "Licenza Professionale",
+			"patenteSub": "Documento fiscale annuale",
+			"casier": "Casellario Giudiziale",
+			"casierSub": "Bollettino n. 3 datato meno di 3 mesi fa",
+			"clickUpload": "Clicca per caricare",
+			"count": "{{done}}/{{total}} documenti caricati",
+			"label": "documenti"
+		},
+		"photo": {
+			"upload": "Carica una foto",
+			"formats": "JPG, PNG, WEBP — max 5 MB",
+			"rule1": "Sfondo neutro (bianco o grigio chiaro)",
+			"rule2": "Viso ben visibile, abbigliamento professionale",
+			"rule3": "Niente selfie, occhiali da sole o filtri",
+			"aiInfo": "La nostra IA migliorerà automaticamente la luminosità e lo sfondo per un risultato professionale.",
+			"analyze": "Analizza la mia foto",
+			"original": "Originale",
+			"enhanced": "Versione Migliorata IA",
+			"approve": "✓ Approva e continua"
+		},
+		"avail": {
+			"slotsTitle": "Slot di Disponibilità",
+			"slotsInfo": "Clicca sulle celle per attivare i tuoi slot. I clienti potranno prenotare durante questi orari.",
+			"available": "Disponibile",
+			"unavailable": "Non disponibile",
+			"emergency": "Emergenze Legali",
+			"emergencySub": "Accetta richieste urgenti fuori dagli slot",
+			"locationTitle": "Posizione Studio",
+			"locationNote": "Inserisci il tuo indirizzo esatto. Latitudine/longitudine richiesta per la visualizzazione della mappa.",
+			"mapPin": "📍 Mappa interattiva in arrivo"
+		},
+		"day": {
+			"Mon": "Lun",
+			"Tue": "Mar",
+			"Wed": "Mer",
+			"Thu": "Gio",
+			"Fri": "Ven",
+			"Sat": "Sab",
+			"Sun": "Dom"
+		},
+		"preview": {
+			"info": "Ecco come apparirà il tuo profilo pubblico su Juridika.tn.",
+			"barreau": "Ordine",
+			"onat": "Verificato ONAT",
+			"founder": "Membro Fondatore",
+			"specialties": "Specialità",
+			"languages": "Lingue:",
+			"whatsapp": "Disponibile su WhatsApp",
+			"availability": "Disponibilità",
+			"empty": "Non specificato",
+			"saved": "✓ Anteprima salvata"
+		},
+		"plans": {
+			"intro": "Scegli il piano adatto alla tua pratica. Tutti i piani includono accesso immediato alla piattaforma.",
+			"trialNote": "14 giorni di prova gratuita inclusi con il piano {{plan}}."
+		},
+		"plan": {
+			"trial14": "14 giorni gratis",
+			"gratuit": {
+				"label": "GRATUITO",
+				"unit": "per sempre",
+				"f1": "Profilo pubblico base",
+				"f2": "1 area di specialità",
+				"f3": "Messaggistica clienti (5/mese)",
+				"f4": "Badge verificato ONAT",
+				"d1": "Priorità nelle ricerche",
+				"d2": "Statistiche del profilo",
+				"d3": "Prenotazione appuntamenti online"
+			},
+			"essentiel": {
+				"label": "ESSENZIALE",
+				"unit": "all'anno, IVA esclusa",
+				"trial": "14 giorni gratis",
+				"f1": "Profilo completo ottimizzato SEO",
+				"f2": "3 specialità",
+				"f3": "Messaggistica clienti illimitata",
+				"f4": "Prenotazione appuntamenti online",
+				"f5": "Statistiche di base"
+			},
+			"pro": {
+				"label": "PROFESSIONALE",
+				"unit": "all'anno, IVA esclusa",
+				"badge": "⭐ Popolare",
+				"f1": "Tutto l'Essenziale +",
+				"f2": "Priorità nelle ricerche",
+				"f3": "Badge Pro in evidenza",
+				"f4": "Dashboard analitica",
+				"f5": "Supporto prioritario"
+			},
+			"cabinet": {
+				"label": "STUDIO",
+				"unit": "all'anno, IVA esclusa",
+				"f1": "Fino a 5 avvocati",
+				"f2": "Pagina studio dedicata",
+				"f3": "Gestione centralizzata",
+				"f4": "API e integrazioni",
+				"f5": "Account manager dedicato"
+			}
+		},
+		"payment": {
+			"summary": "Riepilogo Ordine",
+			"plan": "Piano {{plan}}",
+			"period": "Durata",
+			"months12": "12 mesi",
+			"tva": "IVA (0%)",
+			"total": "Totale IVA inclusa",
+			"modeTitle": "Metodo di Pagamento",
+			"online": "Pagamento Online",
+			"onlineSub": "Konnect o Flouci — immediato",
+			"virement": "Bonifico Bancario",
+			"virementSub": "Entro 2-3 giorni lavorativi",
+			"virementInfo": "Effettua il bonifico con il riferimento sottostante, poi carica la prova.",
+			"bank": "BANCA",
+			"holder": "INTESTATARIO",
+			"rib": "IBAN",
+			"amount": "IMPORTO",
+			"reference": "RIFERIMENTO",
+			"uploadJustif": "Prova di Bonifico",
+			"uploadFormats": "PDF, JPG o PNG — screenshot accettato"
+		},
+		"confirm": {
+			"title": "Fascicolo in Elaborazione",
+			"sub": "La tua candidatura è stata inviata con successo.",
+			"step1": "✓ Fascicolo inviato",
+			"step2": "Prova di pagamento ricevuta",
+			"step3": "Verifica ONAT in corso (48h)",
+			"step4": "Attivazione account avvocato",
+			"timeline": "Tempo di validazione abituale: da 24 a 72 ore lavorative.",
+			"emailNote": "Email inviata a {{email}}. Riceverai una notifica WhatsApp + email all'attivazione. La fattura ufficiale sarà allegata.",
+			"pending": "In attesa",
+			"confirmed": "Fascicolo confermato — ti contatteremo entro 24 ore."
+		},
+		"invoice": {
+			"emitter": "EMITTENTE",
+			"client": "CLIENTE",
+			"desc": "DESCRIZIONE",
+			"period": "PERIODO",
+			"amount": "IMPORTO",
+			"line": "Abbonamento Juridika.tn — Piano {{plan}}",
+			"subtotal": "Subtotale IVA esclusa",
+			"totalttc": "Totale IVA inclusa"
+		},
+		"spec": {
+			"family": "Diritto di Famiglia",
+			"penal": "Diritto Penale",
+			"commercial": "Diritto Commerciale",
+			"immo": "Diritto Immobiliare",
+			"work": "Diritto del Lavoro",
+			"affairs": "Affari Civili",
+			"admin": "Diritto Amministrativo",
+			"fiscal": "Diritto Fiscale",
+			"ip": "Proprietà Intellettuale",
+			"immigration": "Diritto dell'Immigrazione",
+			"succession": "Successioni & Notariato",
+			"bank": "Diritto Bancario"
+		},
+		"lang": {
+			"fr": "Francese",
+			"ar": "Arabo",
+			"en": "Inglese",
+			"it": "Italiano",
+			"de": "Tedesco",
+			"es": "Spagnolo",
+			"ber": "Berbero"
+		},
+		"action": {
+			"next": "Continua →",
+			"back": "Indietro",
+			"copy": "Copia",
+			"confirm": "Conferma Ricezione",
+			"restartDemo": "Ricomincia"
+		},
+		"cta": {
+			"step1": "Crea il mio account →",
+			"step2": "Verifica il codice →",
+			"step7": "Il mio profilo è pronto →",
+			"step8free": "Continua con Gratuito →",
+			"step8paid": "Continua al pagamento →",
+			"step9": "Invia la mia candidatura →"
+		},
+		"footer": {
+			"free": "✓ Gratuito — nessuna carta di credito richiesta",
+			"already_registered": "Già registrato?"
+		},
+		"validation": {
+			"firstName": "Il nome è obbligatorio",
+			"lastName": "Il cognome è obbligatorio",
+			"email": "Indirizzo email non valido",
+			"phone": "Il numero deve essere di 8 cifre",
+			"password": "La password deve contenere almeno 8 caratteri",
+			"passwordNum": "La password deve contenere almeno un numero",
+			"otp": "Inserisci il codice a 6 cifre",
+			"barNumber": "Il numero dell'ordine è obbligatorio",
+			"barNumberFormat": "Formato non valido — atteso: TN-2015-1234",
+			"university": "Seleziona il tuo governatorato / ordine",
+			"graduationYear": "L'anno di laurea è obbligatorio",
+			"practiceStatus": "Lo stato di esercizio è obbligatorio",
+			"specialties": "Seleziona almeno una specialità",
+			"docs": "{{count}} documento/i mancante/i",
+			"photo": "Seleziona una foto",
+			"wilaya": "Il governatorato è obbligatorio",
+			"address": "L'indirizzo è obbligatorio",
+			"justif": "Carica la prova del bonifico"
+		},
+		"status": {
+			"independant": "Avvocato indipendente",
+			"associated": "Avvocato associato",
+			"member": "Membro di uno studio legale"
+		},
+		"error": {
+			"server": "Errore server — riprova"
+		}
+	},
+	"step_indicator": "FASE {{current}} / {{total}}",
+	"step1": {
+		"title": "Crea il tuo profilo",
+		"subtitle": "Gratuito · Senza carta di credito · 3 minuti",
+		"info_box": "Il tuo profilo è necessario per prenotare consulenze, ricevere conferme e proteggere la riservatezza delle tue comunicazioni.",
+		"language_hint": "Lingua in cui desideri essere contattato/a",
+		"security_title": "Sicurezza dell'account",
+		"password_hint": "Scegli una password sicura"
+	},
+	"step2": {
+		"title": "Verifica dell'identità",
+		"subtitle": "Sicuro · Cifrato AES-256 · Mai condiviso",
+		"why_verify_title": "Perché verificare la tua identità?",
+		"why_verify_desc": "La verifica protegge gli avvocati e garantisce la tracciabilità delle consulenze. I tuoi documenti sono cifrati e non vengono mai condivisi con terzi.",
+		"upload_doc": "Carica una copia",
+		"upload_doc_formats": "JPG, PNG, PDF · max 5 MB",
+		"upload_photo": "Aggiungi una foto profilo",
+		"upload_photo_formats": "Foto neutra su sfondo chiaro · JPG, PNG · max 5 MB",
+		"click_to_upload": "Clicca per caricare",
+		"doc_optional_hint": "Il caricamento è facoltativo. Un numero valido è sufficiente per continuare.",
+		"consent_title": "Consensi",
+		"security_banner": "I tuoi dati sono cifrati AES-256 e non vengono mai venduti né condivisi con terzi."
+	},
+	"step3": {
+		"title": "Il tuo bisogno legale",
+		"subtitle": "Queste informazioni ci aiutano a trovare l'avvocato giusto per te",
+		"governorate_hint": "Dove desideri consultare? (di persona o nelle vicinanze)",
+		"situation_hint": "{{count}}/500 caratteri — Queste informazioni rimangono riservate e vengono condivise solo con l'avvocato che scegli.",
+		"urgency_title": "Urgenza",
+		"urgent_warning": "Per le emergenze, avrai accesso agli avvocati disponibili 24/7 in reperibilità."
+	},
+	"step4": {
+		"title": "Scegli il tuo avvocato",
+		"subtitle": "",
+		"urgent_banner": "Modalità urgenza — Vengono mostrati solo gli avvocati disponibili 24/7.",
+		"neutral_ranking_title": "Classifica neutrale e casuale",
+		"neutral_ranking_desc": "Nessun avvocato può acquistare una posizione migliore. Ordinamento basato sulla prossimità e sulla disponibilità.",
+		"search_placeholder": "Nome, specialità, quartiere...",
+		"loading": "Caricamento avvocati...",
+		"empty": "Nessun avvocato trovato.",
+		"results_count_one": "{{count}} avvocato corrisponde alla tua ricerca",
+		"results_count_other": "{{count}} avvocati corrispondono alla tua ricerca"
+	},
+	"step5_calendar": {
+		"title": "Scegli uno slot",
+		"available_days": "Disponibile il: {{days}}",
+		"loading_slots": "Caricamento delle disponibilità...",
+		"no_slots_warning": "Questo avvocato non ha ancora configurato le sue disponibilità. Contattalo direttamente.",
+		"select_date_hint": "Seleziona una data disponibile per vedere gli orari.",
+		"slots_title": "Slot disponibili — {{day}} {{month}} {{year}}",
+		"no_slots_day": "Nessuno slot per questo giorno.",
+		"slot_confirmed": "Slot selezionato: {{day}} {{month}} {{year}} alle {{time}}",
+		"slot_confirmed_hint": "Conferma 1 giorno e 3 ore prima dell'appuntamento.",
+		"legend_available": "Disponibile",
+		"legend_selected": "Selezionato",
+		"legend_unavailable": "Non disponibile",
+		"error_select_slot": "Seleziona uno slot."
+	},
+	"step5_urgent": {
+		"title": "Connessione urgente",
+		"subtitle": "Avvocato di reperibilità 24/7",
+		"urgent_mode_title": "Modalità urgenza attivata.",
+		"urgent_mode_desc": "Contatterai direttamente l'avvocato sul suo numero di reperibilità. La piattaforma invia contemporaneamente una notifica push all'avvocato.",
+		"notification_title": "Notifica inviata all'avvocato",
+		"notification_desc": "Un avviso push è stato trasmesso al telefono di {{name}} con il tuo nome e il tipo del tuo problema legale.",
+		"notification_status": "Adesso · In attesa di risposta",
+		"emergency_window": "Disponibile in reperibilità: {{window}}",
+		"duty_number_label": "NUMERO DI REPERIBILITÀ",
+		"no_answer_prompt": "L'avvocato non risponde?",
+		"footer_note": "Chiamata diretta · Nessuna commissione · Pagamento in studio",
+		"no_answer_title": "Nessuna risposta",
+		"no_answer_subtitle": "Prenota uno slot prioritario",
+		"no_answer_badge": "Nessuna risposta",
+		"reminder_title": "Promemoria automatico inviato all'avvocato",
+		"reminder_desc": "{{name}} ha ricevuto una 2ª notifica push urgente con i tuoi contatti. Può ricontattarti direttamente.",
+		"reminder_status": "Adesso · In attesa di richiamata",
+		"book_slot_title": "Prenota uno slot prioritario",
+		"book_slot_hint": "Scegli uno slot di emergenza. L'avvocato verrà notificato immediatamente e confermerà entro 15 minuti.",
+		"slot_confirmed": "Slot prioritario prenotato: {{slot}}",
+		"slot_confirmed_desc": "L'avvocato è stato notificato e confermerà entro 15 minuti. Ti verrà inviato un SMS di conferma.",
+		"emergency_window_info": "Finestra di reperibilità di questo avvocato: {{window}}",
+		"try_another": "Prova un altro avvocato"
+	},
+	"step6": {
+		"title": "Conferma l'appuntamento",
+		"subtitle": "Ultimo passaggio prima della conferma",
+		"consult_mode_title": "Modalità di consulenza",
+		"formats_info": "Questo avvocato propone: {{formats}}",
+		"format_in_person": "Di persona",
+		"format_in_person_sub": "Nello studio dell'avvocato",
+		"format_phone": "Telefono",
+		"format_phone_sub": "Chiamata vocale sicura",
+		"format_video": "Videoconferenza",
+		"format_video_sub": "Zoom / Teams / Meet",
+		"format_unavailable": "Non disponibile",
+		"note_title": "Contesto per l'avvocato",
+		"note_placeholder": "Specifica dettagli utili all'avvocato prima della consulenza. Es.: Ho documenti da condividere, il mio caso è collegato a un procedimento in corso dal 2023...",
+		"note_hint": "{{count}}/400 · Queste informazioni vengono trasmesse direttamente all'avvocato e rimangono riservate.",
+		"recap_title": "Riepilogo",
+		"recap_lawyer": "Avvocato scelto",
+		"recap_date": "Data e ora",
+		"recap_date_urgent": "Oggi / Urgenza",
+		"recap_legal": "Tipo di diritto",
+		"recap_payment": "Pagamento diretto in studio (nessuna commissione)"
+	},
+	"step7": {
+		"title": "Richiesta inviata!",
+		"subtitle": "Il tuo avvocato è stato notificato e ti contatterà il prima possibile. Riceverai una conferma via SMS.",
+		"pending_validation": "Il tuo account è in fase di validazione.",
+		"pending_desc": "Il nostro team esaminerà il tuo dossier. Riceverai un'email di conferma entro 24 ore.",
+		"chosen_lawyer": "Avvocato scelto",
+		"legal_type": "Tipo di diritto",
+		"urgency": "Urgenza",
+		"sms_confirm": "Conferma SMS",
+		"pending": "In attesa",
+		"delay_info": "Tempi di conferma: meno di 24 ore lavorative.",
+		"email_sent": "Un'email di conferma è stata inviata a {{email}}"
+	},
+	"otp": {
+		"title": "Verifica email",
+		"subtitle": "Un codice è stato inviato al tuo indirizzo",
+		"sent_to": "Un codice di verifica è stato inviato a {{email}}",
+		"label": "CODICE DI VERIFICA",
+		"verify": "Verifica il codice",
+		"resend": "Invia di nuovo il codice",
+		"resend_countdown": "Invia di nuovo tra {{seconds}}s",
+		"change_email": "Modifica l'email"
+	},
+	"field": {
+		"first_name": "NOME",
+		"last_name": "COGNOME",
+		"email": "INDIRIZZO EMAIL",
+		"phone": "TELEFONO",
+		"preferred_language": "LINGUA PREFERITA",
+		"password": "PASSWORD",
+		"confirm_password": "CONFERMA PASSWORD",
+		"id_type": "TIPO DI DOCUMENTO D'IDENTITÀ",
+		"id_number": "NUMERO",
+		"doc_copy": "COPIA DEL DOCUMENTO",
+		"profile_photo": "FOTO PROFILO",
+		"governorate": "GOVERNATORATO DI RICERCA",
+		"legal_type": "TIPO DI PROBLEMA LEGALE",
+		"situation": "DESCRIVI BREVEMENTE LA TUA SITUAZIONE",
+		"emergency_number": "NUMERO DI REPERIBILITÀ",
+		"consult_note": "MESSAGGIO O CONTESTO AGGIUNTIVO"
+	},
+	"placeholder": {
+		"first_name": "Il tuo nome",
+		"last_name": "Il tuo cognome",
+		"email": "tu@esempio.com",
+		"phone": "XX XXX XXX",
+		"password": "Minimo 8 caratteri",
+		"confirm_password": "Ripeti la tua password",
+		"id_number": "Es.: 12345678",
+		"situation": "Es.: Ho ricevuto una lettera di licenziamento e voglio contestare la procedura. Sono impiegato da 7 anni...",
+		"search_lawyer": "Nome, specialità, quartiere...",
+		"select_governorate": "Scegli un governatorato",
+		"consult_note": "Specifica dettagli utili all'avvocato prima della consulenza..."
+	},
+	"error": {
+		"first_name_required": "Nome obbligatorio",
+		"last_name_required": "Cognome obbligatorio",
+		"email_invalid": "Email valida obbligatoria",
+		"phone_invalid": "Numero di 8 cifre obbligatorio",
+		"password_min": "Minimo 8 caratteri",
+		"password_mismatch": "Le password non corrispondono",
+		"id_number_required": "Numero obbligatorio",
+		"consent_required": "Consenso obbligatorio",
+		"governorate_required": "Governatorato obbligatorio",
+		"legal_type_required": "Seleziona un tipo",
+		"urgency_required": "Indica il livello di urgenza",
+		"lawyer_required": "Seleziona un avvocato",
+		"otp_required": "Inserisci il codice ricevuto via email",
+		"select_slot": "Seleziona uno slot."
+	},
+	"label": {
+		"optional": "facoltativo",
+		"or": "O",
+		"available": "✓ Disponibile",
+		"full": "Completo",
+		"verified": "✓ Verificato ONAT",
+		"emergency_24_7": "24/7",
+		"duty_number": "NUMERO DI REPERIBILITÀ"
+	},
+	"lang": {
+		"french": "Francese",
+		"arabic": "Arabo",
+		"english": "Inglese"
+	},
+	"id_type": {
+		"cin": "Carta d'identità nazionale tunisina",
+		"passport": "Passaporto",
+		"residence_permit": "Permesso di soggiorno"
+	},
+	"id_type_label": {
+		"cin": "CIN · 8 CIFRE",
+		"passport": "PASSAPORTO",
+		"residence_permit": "PERMESSO DI SOGGIORNO"
+	},
+	"legal_type": {
+		"family": "Diritto di famiglia",
+		"criminal": "Diritto penale",
+		"labor": "Diritto del lavoro",
+		"real_estate": "Immobiliare",
+		"commercial": "Diritto commerciale",
+		"immigration": "Immigrazione",
+		"corporate": "Diritto societario",
+		"other": "Altro"
+	},
+	"urgency": {
+		"flexible": {
+			"label": "Flessibile",
+			"sub": "Nelle prossime 2 settimane"
+		},
+		"soon": {
+			"label": "Presto",
+			"sub": "Questa settimana"
+		},
+		"urgent": {
+			"label": "Urgente",
+			"sub": "Oggi / 24h"
+		}
+	},
+	"slot": {
+		"slot_30min": {
+			"label": "Tra 30 min",
+			"sub": "Disponibile adesso"
+		},
+		"slot_1h": {
+			"label": "Tra 1h",
+			"sub": "Slot prioritario"
+		},
+		"slot_2h": {
+			"label": "Tra 2h",
+			"sub": "Slot prioritario"
+		}
+	},
+	"day": {
+		"mon": "Lun",
+		"tue": "Mar",
+		"wed": "Mer",
+		"thu": "Gio",
+		"fri": "Ven",
+		"sat": "Sab",
+		"sun": "Dom"
+	},
+	"month": {
+		"0": "Gennaio",
+		"1": "Febbraio",
+		"2": "Marzo",
+		"3": "Aprile",
+		"4": "Maggio",
+		"5": "Giugno",
+		"6": "Luglio",
+		"7": "Agosto",
+		"8": "Settembre",
+		"9": "Ottobre",
+		"10": "Novembre",
+		"11": "Dicembre"
+	},
+	"calendar": {
+		"days_short": [
+			"LUN",
+			"MAR",
+			"MER",
+			"GIO",
+			"VEN",
+			"SAB",
+			"DOM"
+		],
+		"prev": "‹",
+		"next": "›"
+	},
+	"format": {
+		"in_person": "🏛️ Di persona",
+		"video": "💻 Video",
+		"phone": "📞 Telefono"
+	},
+	"badge": {
+		"label": "IL BADGE FONDATORE",
+		"headline_prefix": "Uno status permanente,",
+		"headline_accent": "visualizzato a vita",
+		"description": "Il badge Membro Fondatore appare nel tuo profilo pubblico, visibile a tutti i clienti che ti cercano. Segnala il tuo ruolo nella costruzione dell'accesso alla giustizia in Tunisia.",
+		"benefit1_title": "Tariffa preferenziale garantita a vita",
+		"benefit1_desc": "La tua tariffa di abbonamento è bloccata alla tariffa fondatore, anche se i prezzi aumentano al lancio ufficiale. Garanzia contrattuale.",
+		"benefit2_title": "Badge permanente sul tuo profilo",
+		"benefit2_desc": "Il badge \"Membro Fondatore #XXXX\" è visualizzato a vita nel tuo profilo pubblico. Distingue i pionieri della piattaforma ai clienti.",
+		"benefit3_title": "Accesso prioritario alle nuove funzionalità",
+		"benefit3_desc": "I membri fondatori testano e validano ogni nuova funzionalità prima del deployment generale. La tua opinione forma il prodotto.",
+		"benefit4_title": "Numero di serie unico — non trasferibile",
+		"benefit4_desc": "Ogni membro riceve un numero fondatore (da #0001 a #0050). Questo numero è permanente, legato al tuo account e non trasferibile.",
+		"benefit5_title": "Rete fondatori — canale diretto con il team",
+		"benefit5_desc": "Canale WhatsApp/Signal privato con Jawaher Chatbri (CEO) e il team prodotto. Segnalazione bug, richieste di funzionalità, supporto prioritario.",
+		"medallion_role": "Avvocato · Classe 2026",
+		"demo_name": "Avv. Sarra Ben Salah",
+		"demo_spec": "Diritto di famiglia · Tunisi",
+		"tag_verified": "Verificato ONAT",
+		"tag_founder": "Membro Fondatore #0016",
+		"profile_note": "Il badge appare nel tuo profilo pubblico visibile a tutti i clienti"
+	},
+	"lawyer": {
+		"experience_one": "{{count}} anno di esperienza",
+		"experience_other": "{{count}} anni di esperienza",
+		"available": "✓ Disponibile",
+		"full": "Completo",
+		"default_spec": "Avvocato",
+		"next": "Prossimo",
+		"today": "Oggi"
+	},
+	"governorate": {
+		"ariana": "Ariana",
+		"beja": "Béja",
+		"ben_arous": "Ben Arous",
+		"bizerte": "Bizerte",
+		"gabes": "Gabès",
+		"gafsa": "Gafsa",
+		"jendouba": "Jendouba",
+		"kairouan": "Kairouan",
+		"kasserine": "Kasserine",
+		"kebili": "Kébili",
+		"kef": "Kef",
+		"mahdia": "Mahdia",
+		"manouba": "Manouba",
+		"medenine": "Médenine",
+		"monastir": "Monastir",
+		"nabeul": "Nabeul",
+		"sfax": "Sfax",
+		"sidi_bouzid": "Sidi Bouzid",
+		"siliana": "Siliana",
+		"sousse": "Sousse",
+		"tataouine": "Tataouine",
+		"tozeur": "Tozeur",
+		"tunis": "Tunis",
+		"zaghouan": "Zaghouan"
+	},
+	"consent": {
+		"data_title": "Trattamento dei miei dati personali",
+		"data_desc": "Accetto che Juridika.tn tratti i miei dati conformemente alla sua <a href='#' class='co-link'>politica sulla privacy</a> e nel rispetto della normativa tunisina INPDP.",
+		"cgu_title": "Condizioni generali di utilizzo",
+		"cgu_desc": "Accetto le <a href='#' class='co-link'>CGU di Juridika.tn</a>. Comprendo che la piattaforma facilita esclusivamente la prenotazione di appuntamenti e non costituisce un servizio legale."
+	},
+	"mapPicker": {
+		"searchPlaceholder": "Cerca un indirizzo...",
+		"searchBtn": "🔍 Cerca",
+		"searching": "...",
+		"clearPin": "Nessun pin",
+		"hint": "Clicca sulla mappa per indicare la posizione del tuo studio",
+		"pinned": "Studio indicato — {{lat}}, {{lng}}"
+	},
+	"forgotPassword": {
+		"nav": {
+			"backToLogin": "Torna al login"
+		},
+		"header": {
+			"title": "Password",
+			"titleItalic": "dimenticata?"
+		},
+		"card": {
+			"title": "Reimposta password",
+			"subtitle": "Ti invieremo un link di reimpostazione",
+			"titleSent": "Email inviata!",
+			"subtitleSent": "Controlla la tua casella di posta"
+		},
+		"fields": {
+			"email": {
+				"label": "Indirizzo email",
+				"placeholder": "tua@email.com"
+			}
+		},
+		"error": {
+			"required": "Email obbligatoria",
+			"generic": "Si è verificato un errore"
+		},
+		"submit": "Invia il link",
+		"sent": {
+			"description": "Un link di reimpostazione è stato inviato a",
+			"checkSpam": "Controlla anche la cartella spam.",
+			"backToLogin": "Torna al login"
+		}
+	},
+	"resetPassword": {
+		"nav": {
+			"backToLogin": "Torna al login"
+		},
+		"header": {
+			"title": "Nuova",
+			"titleItalic": "password"
+		},
+		"card": {
+			"title": "Scegli una password",
+			"subtitle": "Almeno 8 caratteri con almeno un numero",
+			"titleSuccess": "Password aggiornata!",
+			"subtitleSuccess": "Reindirizzamento in corso…"
+		},
+		"fields": {
+			"password": {
+				"label": "Nuova password"
+			},
+			"confirm": {
+				"label": "Conferma password"
+			}
+		},
+		"error": {
+			"invalidToken": "Link non valido o scaduto",
+			"tooShort": "Minimo 8 caratteri",
+			"noDigit": "La password deve contenere almeno un numero",
+			"mismatch": "Le password non corrispondono",
+			"generic": "Si è verificato un errore"
+		},
+		"strength": {
+			"weak": "Troppo corta",
+			"noDigit": "Aggiungi un numero",
+			"fair": "Accettabile",
+			"good": "Buona",
+			"strong": "Molto forte"
+		},
+		"submit": "Salva password",
+		"success": "Verrai reindirizzato alla pagina di login."
+	},
+	"verif": {
+		"tab": {
+			"identity": "Identità",
+			"professional": "Profilo Pro",
+			"documents": "Documenti",
+			"availability": "Disponibilità",
+			"location": "Studio"
+		},
+		"badge": {
+			"pending": "⏳ In attesa",
+			"emergency": "🚨 Urgenza"
+		},
+		"section": {
+			"personalInfo": "Informazioni personali",
+			"barInfo": "Ordine & Accreditamento",
+			"specialties": "Specializzazioni",
+			"languages": "Lingue parlate",
+			"plan": "Piano sottoscritto",
+			"documents": "Documenti inviati",
+			"slots": "Fasce orarie disponibili",
+			"emergency": "Emergenza",
+			"address": "Indirizzo dello studio",
+			"map": "Posizione sulla mappa"
+		},
+		"field": {
+			"firstName": "Nome",
+			"lastName": "Cognome",
+			"email": "Email",
+			"phone": "Telefono",
+			"whatsapp": "WhatsApp",
+			"language": "Lingua",
+			"createdAt": "Registrazione",
+			"barNumber": "Numero d'iscrizione",
+			"barRegion": "Ordine / Regione",
+			"graduationYear": "Anno di laurea",
+			"practiceStatus": "Stato",
+			"firmName": "Studio legale",
+			"gouvernorat": "Governatorato",
+			"quartier": "Quartiere",
+			"address": "Indirizzo completo",
+			"lat": "Latitudine",
+			"lng": "Longitudine"
+		},
+		"status": {
+			"independant": "🏢 Indipendente",
+			"associated": "🤝 Associato",
+			"member": "👥 Membro dello studio"
+		},
+		"empty": {
+			"specialties": "Nessuna specializzazione indicata",
+			"languages": "Nessuna lingua indicata"
+		},
+		"plan": {
+			"meta": "Abbonamento annuale · {{price}} DT/anno"
+		},
+		"doc": {
+			"info": "Verifica l'autenticità di ogni documento prima di approvare il fascicolo.",
+			"carteBarreauFront": "Tessera dell'Ordine (Fronte)",
+			"carteBarreauBack": "Tessera dell'Ordine (Retro)",
+			"diplome": "Diploma",
+			"patente": "Licenza professionale",
+			"casierJudiciaire": "Casellario giudiziale",
+			"paymentProof": "Prova di pagamento",
+			"view": "👁 Visualizza",
+			"viewPdf": "📄 Vedi PDF",
+			"reduce": "▲ Riduci",
+			"missing": "Non fornito"
+		},
+		"avail": {
+			"noSlots": "Nessuna fascia oraria definita",
+			"available": "■ Disponibile",
+			"unavailable": "□ Non disponibile",
+			"slotCount": "{{count}} fascia/e",
+			"emergencyOn": "✅ Accetta urgenze",
+			"emergencyOff": "❌ Urgenze disabilitate"
+		},
+		"location": {
+			"openMaps": "🔗 Apri in Google Maps"
+		},
+		"reject": {
+			"reasonLabel": "Motivo del rifiuto (facoltativo):",
+			"placeholder": "Es.: Documento illeggibile, numero d'iscrizione non valido..."
+		},
+		"action": {
+			"approve": "✓ Approva il fascicolo",
+			"reject": "✕ Rifiuta",
+			"confirmReject": "⚠️ Conferma il rifiuto",
+			"cancel": "Annulla"
+		}
+	},
+	"founding": {
+		"badge": "INVITO ESCLUSIVO · OFFERTA DI LANCIO",
+		"headline_prefix": "Diventa",
+		"headline_accent": "Membro Fondatore",
+		"headline_suffix": "di Juridika.tn",
+		"description": "I primi 50 avvocati che si uniscono a Juridika.tn beneficiano di uno status permanente, una tariffa garantita a vita e un badge professionale visibile a tutti i clienti sul loro profilo.",
+		"places_restantes": "POSTI RIMANENTI",
+		"membres_fondateurs": "Membri Fondatori",
+		"avocats_rejoints": "avvocati si sono già uniti",
+		"cta_primary": "Riserva il mio posto fondatore",
+		"cta_secondary": "Vedi i vantaggi",
+		"deadline": "Offerta aperta fino al 30 aprile 2026 o fino a 50 membri"
+	},
+	"pricing": {
+		"label": "TARIFFE FONDATORI",
+		"headline_prefix": "Tariffa bloccata al lancio,",
+		"headline_accent": "per sempre",
+		"description": "Le tariffe pubbliche aumenteranno al lancio ufficiale. Come membro fondatore, la tua tariffa è garantita contrattualmente, indipendentemente dalle future variazioni di prezzo.",
+		"plan_essentiel": "ESSENZIALE",
+		"essentiel_monthly": "42 DT/mese · invece di 60 DT",
+		"essentiel_f1": "Profilo verificato ONAT · badge visibile",
+		"essentiel_f2": "Prenotazione appuntamenti online",
+		"essentiel_f3": "Calendario disponibilità",
+		"essentiel_f4": "Conferme automatiche G−1 e H−3",
+		"essentiel_f5": "Notifiche clienti email/SMS",
+		"essentiel_f6": "Badge Membro Fondatore permanente",
+		"plan_professionnel": "PROFESSIONALE",
+		"pro_monthly": "63 DT/mese · invece di 90 DT",
+		"pro_f1": "Tutto Essenziale incluso",
+		"pro_f2": "Statistiche dettagliate del profilo",
+		"pro_f3": "Dashboard analitico",
+		"pro_f4": "Emergenze 24/7 opt-in",
+		"pro_f5": "Rete Pro — delega & sostituzione",
+		"pro_f6": "Export agenda iCal / Google Calendar",
+		"pro_f7": "Badge Membro Fondatore · accesso beta",
+		"recommended": "Consigliato",
+		"plan_cabinet": "STUDIO",
+		"cabinet_monthly": "126 DT/mese · invece di 180 DT",
+		"cabinet_f1": "Tutto Professionale · 3 profili",
+		"cabinet_f2": "Pagina studio dedicata",
+		"cabinet_f3": "Account assistente con accesso limitato",
+		"cabinet_f4": "Agenda centralizzata — 3 avvocati",
+		"cabinet_f5": "Dashboard studio consolidato",
+		"cabinet_f6": "3 badge Fondatori · fatturazione di gruppo",
+		"discount": "-30% fondatore",
+		"cta_essentiel": "Scegli Essenziale →",
+		"cta_pro": "Scegli Professionale →",
+		"cta_cabinet": "Scegli Studio →",
+		"guarantee_title": "Garanzia tariffaria scritta",
+		"guarantee_desc": "La tua tariffa fondatore è menzionata nel tuo contratto di abbonamento. Juridika.tn si impegna contrattualmente a non aumentare mai la tua tariffa annuale finché mantieni attivo il tuo abbonamento."
+	},
+	"social": {
+		"label": "SI SONO GIÀ UNITI",
+		"headline_accent": "16 avvocati fondatori",
+		"headline_suffix": "ci hanno dato fiducia",
+		"description": "Professionisti da Tunisi, Sousse e Sfax che hanno scelto di costruire la piattaforma con noi.",
+		"quote1": "\"Aspettavo una soluzione come questa da anni. Il fatto che non ci sia alcuna commissione sui miei onorari è stato l'argomento decisivo.\"",
+		"name1": "Avv. Karim M.",
+		"spec1": "Diritto commerciale · Tunisi",
+		"badge1": "Fondatore #0003",
+		"quote2": "\"La verifica ONAT integrata nel processo di registrazione mi ha convinto che la piattaforma è seria sulla conformità etica.\"",
+		"name2": "Avv. Nadia T.",
+		"spec2": "Immigrazione · Sousse",
+		"badge2": "Fondatrice #0008",
+		"quote3": "\"Gestisco uno studio con due soci. L'offerta Studio al −30% copre tutti e tre i profili — era una decisione ovvia.\"",
+		"name3": "Avv. Hatem R.",
+		"spec3": "Penale · Sfax",
+		"badge3": "Fondatore #0012",
+		"tl_label": "CALENDARIO DI LANCIO",
+		"tl_date1": "Marzo 2026",
+		"tl_title1": "Campagna fondatori — apertura 50 posti",
+		"tl_date2": "30 Apr. 2026",
+		"tl_title2": "Chiusura offerta fondatori o 50 membri raggiunti",
+		"tl_date3": "Maggio 2026",
+		"tl_title3": "Onboarding fondatori — verifica ONAT",
+		"tl_date4": "Giugno 2026",
+		"tl_title4": "Lancio beta — accesso esclusivo fondatori",
+		"tl_date5": "Sett. 2026",
+		"tl_title5": "Lancio ufficiale — tariffe pubbliche"
+	},
+	"faq": {
+		"label": "DOMANDE FREQUENTI",
+		"headline": "Quello che devi sapere",
+		"q1": "Devo pagare adesso?",
+		"a1": "No. Riservi il tuo posto senza alcun pagamento. Il pagamento avviene solo all'attivazione del tuo account, al momento del lancio ufficiale della piattaforma.",
+		"q2": "Il mio posto viene confermato immediatamente?",
+		"a2": "Riceverai un'email di conferma entro 24 ore. Il tuo posto è riservato non appena invii il modulo, ma viene definitivamente confermato dopo la verifica delle tue informazioni.",
+		"q3": "Cosa succede se i 50 posti vengono esauriti prima del 30 aprile?",
+		"a3": "L'offerta fondatori si chiude automaticamente quando vengono raggiunti i 50 membri. Se invii dopo, sarai messo in lista d'attesa e contattato se si libera un posto.",
+		"q4": "Lo sconto del −30% è davvero garantito a vita?",
+		"a4": "Sì. La tua tariffa fondatore è menzionata esplicitamente nel tuo contratto di abbonamento. Juridika.tn si impegna contrattualmente a non aumentare mai la tua tariffa annuale finché mantieni attivo il tuo abbonamento.",
+		"q5": "Quali prove devo fornire per la registrazione ONAT?",
+		"a5": "All'attivazione del tuo account, dovrai caricare: la tua licenza ONAT valida, il tuo diploma di avvocato e una foto d'identità professionale. Il processo di verifica richiede 48 ore lavorative.",
+		"q6": "Posso cambiare piano dopo essermi registrato come fondatore?",
+		"a6": "Sì, puoi aggiornare il tuo piano in qualsiasi momento. Lo sconto fondatore si applica alla nuova tariffa. Non puoi effettuare un downgrade al di sotto del piano sottoscritto alla registrazione fondatore."
+	},
+	"avocatDashboard": {
+		"avocatPortal": "Spazio avvocato",
+		"loadingData": "Caricamento dati...",
+		"appointmentManagement": "Gestione appuntamenti",
+		"reviewManageRequests": "Esamina e gestisci le richieste di consulenza dei clienti.",
+		"totalAppointments": "Totale appuntamenti",
+		"pending": "In attesa",
+		"paid": "Pagato",
+		"confirmed": "Confermato",
+		"today": "Oggi",
+		"pendingRequests": "Richieste in attesa",
+		"paidAppointments": "Appuntamenti pagati",
+		"confirmedAppointments": "Appuntamenti confermati",
+		"rejectedAppointments": "Appuntamenti rifiutati",
+		"noAppointments": "Nessun appuntamento",
+		"noScheduledAppointments": "Non hai ancora appuntamenti programmati.",
+		"myProfile": "Il mio profilo",
+		"managePersonalInfo": "Gestisci le tue informazioni personali e professionali",
+		"personalInformation": "Informazioni personali",
+		"edit": "Modifica",
+		"fullName": "Nome completo",
+		"email": "E-mail",
+		"phone": "Telefono",
+		"specialization": "Specializzazione",
+		"selectSpeciality": "Seleziona una specialità",
+		"civilLaw": "Diritto civile",
+		"criminalLaw": "Diritto penale",
+		"corporateLaw": "Diritto societario",
+		"familyLaw": "Diritto di famiglia",
+		"intellectualProperty": "Proprietà intellettuale",
+		"laborLaw": "Diritto del lavoro",
+		"taxLaw": "Diritto fiscale",
+		"realEstateLaw": "Diritto immobiliare",
+		"yearsOfExperience": "Anni di esperienza",
+		"address": "Indirizzo",
+		"ville": "Città",
+		"adresseCabinet": "Indirizzo dello studio",
+		"selectCity": "Seleziona una città",
+		"loadingCities": "Caricamento città...",
+		"officeAddress": "Indirizzo dello studio",
+		"biography": "Biografia",
+		"describeBackground": "Descrivi il tuo percorso e le tue competenze...",
+		"cancel": "Annulla",
+		"save": "Salva",
+		"saving": "Salvataggio...",
+		"notProvided": "Non fornito",
+		"security": "Sicurezza",
+		"changePassword": "Cambia password",
+		"currentPassword": "Password attuale",
+		"newPassword": "Nuova password",
+		"confirmNewPassword": "Conferma nuova password",
+		"changing": "Modifica in corso...",
+		"changePasswordBtn": "Cambia password",
+		"calendar": "Calendario",
+		"calendarViewSubtitle": "Visualizza i tuoi appuntamenti programmati in formato calendario",
+		"calendarComingSoon": "Vista calendario presto disponibile",
+		"calendarComingSoonDesc": "Stiamo lavorando su una bella interfaccia calendario.",
+		"statistics": "Statistiche",
+		"analyzePerformance": "Analizza le tue prestazioni e attività",
+		"overview": "Panoramica",
+		"totalAppointmentsStat": "Totale appuntamenti",
+		"confirmedAppointmentsStat": "Appuntamenti confermati",
+		"pendingApproval": "In attesa di approvazione",
+		"performance": "Prestazioni",
+		"approvalRate": "Tasso di approvazione",
+		"appointmentsToday": "Appuntamenti oggi",
+		"loading": "Caricamento...",
+		"accountVerificationRequired": "Verifica account richiesta",
+		"accountPendingVerification": "Il tuo account avvocato è in attesa di verifica. Attendi l'approvazione dell'amministratore.",
+		"verificationPendingText": "Il tuo account avvocato è in attesa di verifica. Attendi l'approvazione dell'amministratore.",
+		"verificationInProgress": "Verifica in corso",
+		"noBiographyProvided": "Nessuna biografia fornita",
+		"total": "Totale",
+		"lawyerAccount": "Account avvocato",
+		"verified": "Verificato",
+		"myConsultations": "Le mie consulenze",
+		"myCases": "I miei fascicoli",
+		"myInformation": "Le mie informazioni",
+		"signOut": "Disconnetti",
+		"statusConfirmed": "Confermato",
+		"statusWaiting": "In attesa",
+		"statusPaid": "Pagamento ricevuto",
+		"statusRejected": "Rifiutato",
+		"date": "Data:",
+		"time": "Ora:",
+		"phoneLabel": "Telefono:",
+		"message": "Messaggio:",
+		"approve": "Approva",
+		"reject": "Rifiuta",
+		"confirmAppointment": "Conferma appuntamento",
+		"reschedule": "Riprogramma",
+		"profileUpdated": "Profilo aggiornato con successo!",
+		"passwordChanged": "Password modificata con successo!",
+		"passwordMismatch": "La nuova password e la conferma non corrispondono",
+		"errorUpdatingProfile": "Errore durante l'aggiornamento del profilo",
+		"errorChangingPassword": "Errore durante il cambio password",
+		"confirmCancel": "Sei sicuro di voler annullare questo appuntamento?",
+		"cancelError": "Impossibile annullare l'appuntamento sul server.",
+		"errorApproving": "Errore durante l'approvazione",
+		"errorRejecting": "Errore durante il rifiuto",
+		"appointmentNotFound": "Appuntamento non trovato",
+		"workingHours": "Orario di lavoro",
+		"workingHoursSaved": "Orario di lavoro salvato con successo!",
+		"errorSavingWorkingHours": "Errore durante il salvataggio dell'orario",
+		"from": "Da",
+		"to": "A",
+		"closed": "Chiuso",
+		"days": { "Mon": "Lunedì", "Tue": "Martedì", "Wed": "Mercoledì", "Thu": "Giovedì", "Fri": "Venerdì", "Sat": "Sabato", "Sun": "Domenica" },
+		"noFilteredAppointments": "Nessun appuntamento corrisponde al filtro.",
+		"profilePicture": "Foto profilo",
+		"changePhoto": "Cambia foto",
+		"avatarHelpText": "Massimo 5 MB. JPG o PNG preferibilmente.",
+		"avatarTooLarge": "Immagine troppo grande. Massimo 5 MB.",
+		"avatarInvalidType": "Tipo di file non valido.",
+		"avatarUploadError": "Errore durante il caricamento dell'immagine",
+		"nameCannotBeChanged": "Il nome non può essere modificato. Contatta il supporto.",
+		"client": "Cliente",
+		"noEmail": "Nessuna e-mail",
+		"markAsPaid": "Segna come pagato",
+		"markAsPaidTitle": "Segna come pagato quando il cliente paga di persona",
+		"paymentConfirmed": "Pagamento confermato!",
+		"paymentError": "Errore durante la conferma del pagamento. Riprova.",
+		"paymentInfo": "Informazioni di pagamento",
+		"method": "Metodo",
+		"confirmedOn": "Confermato il",
+		"paymentStatus": { "not_paid": "Non pagato", "paid_in_person": "Pagato di persona", "paid_online": "Pagato online" },
+		"paymentMethod": { "in_person": "Di persona", "online": "Online", "credit_card": "Carta di credito", "cash": "Contanti" },
+		"appointmentDetails": "Dettagli appuntamento",
+		"clientInformation": "Informazioni cliente",
+		"appointmentInformation": "Informazioni appuntamento",
+		"type": "Tipo",
+		"status": "Stato",
+		"clientMessage": "Messaggio del cliente",
+		"yourNotes": "Le tue note",
+		"attachedDocuments": "Documenti allegati",
+		"clientFiles": "File cliente",
+		"lawyerFiles": "File avvocato",
+		"yourFiles": "I tuoi file",
+		"download": "Scarica",
+		"videoCall": "Videochiamata",
+		"consultation": "Consulenza",
+		"autoCancelReason": "Annullamento automatico: appuntamento scaduto senza conferma",
+		"failedToRefreshStatus": "Aggiornamento stato fallito",
+		"cities": {
+			"Tunis": "Tunisi", "Sfax": "Sfax", "Sousse": "Sousse", "Gabes": "Gabès",
+			"Bizerte": "Biserta", "Ariana": "Ariana", "Gafsa": "Gafsa", "Monastir": "Monastir",
+			"Kairouan": "Kairouan", "Kasserine": "Kasserine", "Mahdia": "Mahdia", "Nabeul": "Nabeul",
+			"Tataouine": "Tataouine", "Kebili": "Kebili", "Siliana": "Siliana", "Kef": "Kef",
+			"Jendouba": "Jendouba", "Zaghouan": "Zaghouan", "Beja": "Béja", "Manouba": "Manouba",
+			"Medenine": "Médenine", "Tozeur": "Tozeur", "Sidi Bouzid": "Sidi Bouzid", "Ben Arous": "Ben Arous"
+		}
+	},
+	"reseauPro": {
+		"title": "Rete Pro",
+		"subtitle": "Spazio chiuso · Avvocati verificati · Invisibile ai clienti",
+		"secretBadge": "Segreto professionale garantito",
+		"myStatus": "Il mio stato",
+		"tabs": { "delegation": "Delega", "substitution": "Sostituzione", "documents": "Documenti", "annuaire": "Elenco" },
+		"dispo": { "disponible": "DISPONIBILE", "en_audience": "IN UDIENZA", "indisponible": "NON DISPONIBILE" },
+		"delegation": {
+			"postTitle": "PUBBLICA UNA RICHIESTA DI DELEGA",
+			"specialite": "Specialità richiesta", "gouvernorat": "Governatorato", "description": "Descrizione",
+			"descHint": "senza dati personali del cliente", "delai": "Scadenza", "langues": "Lingua/e preferita/e",
+			"draft": "Bozza", "publish": "Pubblica", "myDemands": "LE MIE RICHIESTE ATTIVE",
+			"noDemands": "Nessuna richiesta attiva", "feedTitle": "BACHECA RICHIESTE DI RETE ATTIVE",
+			"noFeed": "Nessuna richiesta attiva nella rete", "reply": "Rispondi", "send": "Invia",
+			"cancel": "Annulla", "save": "Salva", "saved": "Salvato", "replySent": "Risposta inviata",
+			"withdraw": "Ritira", "seeReplies": "Vedi risposte", "hide": "Nascondi"
+		},
+		"substitution": {
+			"postTitle": "PUBBLICA UNA RICHIESTA DI SOSTITUZIONE",
+			"tribunal": "Tribunale / Giurisdizione", "date": "Data e ora dell'udienza",
+			"nature": "Natura della causa", "natureHint": "senza dati cliente", "context": "Contesto",
+			"procuration": "Procura tipo", "send": "Invia avviso", "mySubs": "LE MIE SOSTITUZIONI",
+			"noSubs": "Nessuna sostituzione attiva", "feedTitle": "RICHIESTE DI SOSTITUZIONE ATTIVE",
+			"noFeed": "Nessuna richiesta di sostituzione attiva", "accept": "Accetta sostituzione",
+			"ignore": "Ignora", "withdraw": "Ritira", "urgent": "URGENTE",
+			"urgentCount": "URGENTE", "urgentCountPlural": "URGENTI"
+		},
+		"documents": {
+			"addTitle": "CARICA UN DOCUMENTO", "dragDrop": "Trascina un file o clicca per selezionare",
+			"dragSub": "PDF, DOCX, JPG · Max 10 MB", "category": "Categoria documento",
+			"declarationTitle": "Dichiarazione obbligatoria",
+			"declarationText": "Confermo che questo documento non contiene dati personali identificabili di terzi",
+			"upload": "Carica documento", "uploading": "Caricamento...", "myDocs": "I MIEI DOCUMENTI",
+			"received": "RICEVUTI DA COLLEGHI", "noDocs": "Nessun documento archiviato",
+			"open": "Apri", "delete": "Elimina", "storage": "SPAZIO DI ARCHIVIAZIONE",
+			"used": "Spazio utilizzato", "quota": "Quota rimanente", "docsCount": "Documenti archiviati",
+			"receivedCount": "Ricevuti da colleghi", "quotaWarn": "Più della metà della quota utilizzata",
+			"quotaDanger": "Quota quasi raggiunta"
+		},
+		"annuaire": {
+			"search": "Cerca per nome, specialità, città...", "all": "Tutti", "available": "Disponibili",
+			"results": "colleghi", "message": "Messaggio", "convention": "Convenzione",
+			"noResults": "Nessun collega trovato", "clearSearch": "Cancella ricerca",
+			"conventionTitle": "Convenzione con", "conventionSub": "Proponi una convenzione di collaborazione a questo collega.",
+			"conventionObject": "Oggetto della convenzione", "conventionProposeBtn": "Proponi convenzione",
+			"proposing": "...", "messageSoon": "funzionalità in arrivo"
+		}
+	}
+}

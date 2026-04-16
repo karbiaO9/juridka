@@ -1,0 +1,551 @@
+/* ── Google Fonts ─────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ── Reset ────────────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; }
+
+input, select, textarea { font-family: 'DM Sans', sans-serif; }
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #1e3a5f !important;
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Layout ───────────────────────────────────────────────────────────────── */
+.co-page {
+  min-height: 100vh;
+  background: #f5f0e8;
+  font-family: 'DM Sans', sans-serif;
+  padding-bottom: 60px;
+}
+
+.co-container {
+  max-width: 880px;
+  margin: 32px auto 0;
+  padding: 0 16px;
+}
+
+/* ── Step bubbles ─────────────────────────────────────────────────────────── */
+.co-nav-steps {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 19px;
+}
+
+.co-bubble {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(7, 55, 230, 0.2);
+  color: rgba(7, 55, 230, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.co-bubble--active {
+  border: 1.5px solid #c2852a;
+  color: #c2852a;
+  background: rgba(194, 133, 42, 0.15);
+}
+
+.co-bubble--done {
+  border: 1.5px solid rgba(0,0,0,0.35);
+  color: rgb(30, 99, 1);
+  background: rgba(15, 15, 15, 0.08);
+}
+
+/* ── Card ─────────────────────────────────────────────────────────────────── */
+.co-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
+
+.co-card-header {
+  background: #1b263b;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.co-step-tag {
+  color: #c2852a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.co-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.co-card-sub {
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.co-step-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.co-card-body { padding: 28px 32px; }
+
+.co-card-footer {
+  padding: 18px 32px;
+  border-top: 1px solid #f0ece6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafaf8;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.co-footer-right { display: flex; align-items: center; gap: 12px; }
+.co-footer-free  { font-size: 13px; color: #aaa; }
+
+/* ── Alert ────────────────────────────────────────────────────────────────── */
+.co-alert-box {
+  background: #fef2f2;
+  border-left: 4px solid #dc2626;
+  color: #dc2626;
+  padding: 12px 20px;
+  font-size: 13px;
+}
+
+/* ── Form ─────────────────────────────────────────────────────────────────── */
+.co-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.co-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.co-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #888;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.co-optional {
+  font-weight: 400;
+  color: #bbb;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.co-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #e0d8cc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  background: white;
+  transition: border 0.2s;
+}
+
+.co-input--error { border-color: #dc2626 !important; }
+
+.co-textarea { resize: vertical; line-height: 1.6; }
+
+.co-field-error { font-size: 12px; color: #dc2626; margin-top: 4px; }
+
+.co-hint { font-size: 11px; color: #aaa; margin-top: 4px; }
+
+/* ── Phone ────────────────────────────────────────────────────────────────── */
+.co-phone-row { display: flex; }
+
+.co-phone-prefix {
+  padding: 10px 14px;
+  background: #f0f4f8;
+  border: 1.5px solid #e0d8cc;
+  border-radius: 8px 0 0 8px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.co-input--phone {
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+
+/* ── Checkbox ─────────────────────────────────────────────────────────────── */
+.co-cb { accent-color: #1e3a5f; cursor: pointer; }
+
+/* ── Link ─────────────────────────────────────────────────────────────────── */
+.co-link { color: #c2852a; text-decoration: underline; }
+
+/* ── Info boxes ───────────────────────────────────────────────────────────── */
+.co-info-box {
+  background: #fff8ee;
+  border: 1px solid #f4d090;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: #92400e;
+  line-height: 1.6;
+}
+
+.co-info-box--green  { background: #f0fdf4; border-color: #86efac; color: #166534; }
+.co-info-box--blue   { background: #eff6ff; border-color: #bfdbfe; color: #1e3a5f; }
+.co-info-box--red    { background: #fef2f2; border-color: #fca5a5; color: #991b1b; border-left: 4px solid #dc2626; }
+
+.co-onat-banner {
+  background: #1e3a5f;
+  color: rgba(255,255,255,0.9);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* ── Section divider / title ──────────────────────────────────────────────── */
+.co-section-divider { border: none; border-top: 1px solid #f0ece6; margin: 4px 0; }
+
+.co-section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: #1e3a5f;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ── Tags ─────────────────────────────────────────────────────────────────── */
+.co-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.co-tag {
+  padding: 6px 14px;
+  border: 1.5px solid #e0d8cc;
+  border-radius: 20px;
+  background: white;
+  font-size: 12px;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.co-tag:hover  { border-color: #1e3a5f; color: #1e3a5f; }
+.co-tag--on    { background: #1e3a5f; color: white; border-color: #1e3a5f; }
+.co-tag--sm    { padding: 3px 10px; font-size: 11px; }
+
+/* ── Doc cards ────────────────────────────────────────────────────────────── */
+.co-doc-card {
+  border: 1.5px dashed #e0d8cc;
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #fafaf8;
+}
+
+.co-doc-card--done   { border-color: #2a7c4f; border-style: solid; background: #f0fdf4; }
+.co-doc-card:hover   { border-color: #1e3a5f; }
+.co-doc-label        { font-weight: 600; color: #1e3a5f; font-size: 14px; }
+.co-doc-sub          { font-size: 12px; color: #888; margin-top: 2px; }
+.co-doc-done-name    { color: #2a7c4f; font-weight: 600; font-size: 12px; }
+.co-doc-placeholder  { font-size: 12px; color: #aaa; }
+
+/* ── Urgency / Slot grid ──────────────────────────────────────────────────── */
+.co-urgency-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.co-urgency-card {
+  border: 1.5px solid #e0d8cc;
+  border-radius: 10px;
+  padding: 16px 12px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: white;
+  transition: all 0.18s;
+}
+
+.co-urgency-card:hover    { border-color: #1e3a5f; }
+.co-urgency-card--on      { border-color: #1e3a5f; background: #1e3a5f; box-shadow: 0 0 0 3px rgba(30,58,95,0.07); }
+.co-urgency-label         { font-size: 14px; font-weight: 700; color: #1e3a5f; }
+.co-urgency-card--on .co-urgency-label { color: white; }
+.co-urgency-sub           { font-size: 11px; color: #aaa; }
+.co-urgency-card--on .co-urgency-sub   { color: rgba(255,255,255,0.6); }
+
+/* ── Search bar ───────────────────────────────────────────────────────────── */
+.co-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #e0d8cc;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.co-search-bar:focus-within { border-color: #1e3a5f; box-shadow: 0 0 0 3px rgba(30,58,95,0.1); }
+
+.co-search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+
+/* ── Lawyer cards ─────────────────────────────────────────────────────────── */
+.co-lawyers-list { display: flex; flex-direction: column; gap: 10px; }
+
+.co-lawyer-card {
+  border: 1.5px solid #e0d8cc;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.co-lawyer-card:hover        { border-color: #1e3a5f; box-shadow: 0 4px 16px rgba(30,58,95,0.10); }
+.co-lawyer-card--selected    { border-color: #c2852a; box-shadow: 0 0 0 3px rgba(194,133,42,0.12); }
+
+.co-lawyer-top {
+  background: #1b263b;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.co-lawyer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(194,133,42,0.25);
+  border: 2px solid #c2852a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  color: #c2852a;
+  flex-shrink: 0;
+}
+
+.co-lawyer-avatar--lg   { width: 72px; height: 72px; font-size: 20px; }
+.co-lawyer-avatar--grey { background: rgba(148,163,184,0.2); border-color: #94a3b8; color: #94a3b8; }
+
+.co-lawyer-name { font-size: 16px; font-weight: 700; color: white; margin-bottom: 2px; }
+.co-lawyer-spec { font-size: 12px; color: rgba(255,255,255,0.5); }
+
+.co-lawyer-meta {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: white;
+}
+
+.co-lawyer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 0;
+}
+
+.co-results-count { text-align: center; font-size: 12px; color: #aaa; padding: 8px 0; }
+
+/* ── Badges ───────────────────────────────────────────────────────────────── */
+.co-badge {
+  padding: 3px 9px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.8);
+}
+
+.co-badge--gold { background: #c2852a; color: #1b263b; }
+.co-badge--red  { background: #dc2626; color: white; }
+
+/* ── Buttons ──────────────────────────────────────────────────────────────── */
+.co-btn {
+  padding: 10px 22px;
+  background: #1b263b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+  transition: background 0.18s;
+}
+
+.co-btn:hover      { background: #263654; }
+.co-btn--chosen    { background: #c2852a; color: white; }
+.co-btn--disabled  { background: #e0d8cc; color: #aaa; cursor: not-allowed; }
+
+.co-back-btn {
+  background: none;
+  border: 1.5px solid #e0d8cc;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.18s;
+}
+
+.co-back-btn:hover { border-color: #1e3a5f; color: #1e3a5f; }
+
+/* ── Phone big ────────────────────────────────────────────────────────────── */
+.co-phone-big {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #1e3a5f;
+  letter-spacing: 3px;
+}
+
+/* ── Call button ──────────────────────────────────────────────────────────── */
+.co-call-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  background: #16a34a;
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: background 0.18s;
+  box-shadow: 0 4px 14px rgba(22,163,74,0.25);
+}
+
+.co-call-btn:hover { background: #15803d; }
+
+/* ── Divider ──────────────────────────────────────────────────────────────── */
+.co-divider { display: flex; align-items: center; gap: 12px; margin: 4px 0; }
+.co-divider div  { flex: 1; height: 1px; background: #e0d8cc; }
+.co-divider span { font-size: 12px; color: #aaa; font-weight: 600; letter-spacing: 1px; }
+
+/* ── No answer badge ──────────────────────────────────────────────────────── */
+.co-no-answer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #dc2626;
+  margin-top: 8px;
+}
+
+/* ── Confirmation ─────────────────────────────────────────────────────────── */
+.co-confirm-center { text-align: center; padding: 16px 0; }
+.co-confirm-icon   { font-size: 58px; margin-bottom: 12px; }
+
+.co-confirm-title {
+  font-family: 'Cormorant Garamond', serif;
+  color: #1e3a5f;
+  font-size: 28px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.co-confirm-sub { color: #888; font-size: 14px; margin-top: 8px; }
+
+.co-confirm-step {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f0e8;
+}
+
+.co-confirm-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.co-confirm-dot--done    { background: #c2852a; }
+.co-confirm-dot--pending { background: #e8ddd0; }
+
+.co-confirm-step-label--done    { font-size: 14px; color: #333; }
+.co-confirm-step-label--pending { font-size: 14px; color: #aaa; }
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .co-card-header, .co-card-body, .co-card-footer { padding-left: 20px; padding-right: 20px; }
+  .co-grid2        { grid-template-columns: 1fr; }
+  .co-urgency-grid { grid-template-columns: 1fr; }
+  .co-lawyer-meta  { flex-direction: column; }
+  .co-phone-big    { font-size: 26px; }
+}

@@ -1,0 +1,174 @@
+/* ══════════════════════════════════════════════════
+   RÉSEAU PRO — Root, Header, Dispo, Tabs
+   ══════════════════════════════════════════════════ */
+
+.rp-root {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  animation: avSlideUp 0.25s ease;
+}
+
+
+
+.rp-title {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--av-text1, #1a1814);
+  margin: 0 0 6px;
+  letter-spacing: -0.03em;
+}
+
+.rp-subtitle {
+  font-size: 13px;
+  color: var(--av-text2, #6b6456);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rp-subtitle-lock { font-size: 14px; }
+
+.rp-badge-secret {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #f0f7f0;
+  color: #2e7d32;
+  border: 1.5px solid #c8e6c9;
+  border-radius: 20px;
+  padding: 6px 14px;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+/* ── Dispo bar ──────────────────────────────────── */
+.rp-dispo-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  background: var(--av-surface, #fff);
+  border: 1.5px solid var(--av-border, #e8e4db);
+  border-radius: 12px;
+  padding: 13px 18px;
+  box-shadow: var(--av-shadow-sm, 0 1px 3px rgba(0,0,0,0.06));
+  flex-wrap: wrap;
+}
+
+.rp-dispo-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--av-text2, #6b6456);
+  white-space: nowrap;
+}
+
+.rp-dispo-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.rp-dispo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1.5px solid transparent;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--av-bg, #f5f4f0);
+  color: var(--av-text2, #6b6456);
+  transition: all 0.18s;
+  letter-spacing: 0.04em;
+}
+.rp-dispo-btn:hover { opacity: 0.8; }
+
+.rp-dispo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* couleurs dispo */
+.rp-dispo-btn.dispo-green  { color: #2e7d32; }
+.rp-dispo-btn.dispo-green  .rp-dispo-dot { background: #43a047; }
+.rp-dispo-btn.dispo-orange { color: #e65100; }
+.rp-dispo-btn.dispo-orange .rp-dispo-dot { background: #fb8c00; }
+.rp-dispo-btn.dispo-red    { color: #c62828; }
+.rp-dispo-btn.dispo-red    .rp-dispo-dot { background: #e53935; }
+
+.rp-dispo-btn.dispo-green.active  { background: #e8f5e9; border-color: #81c784; box-shadow: 0 0 0 3px rgba(76,175,80,.12); }
+.rp-dispo-btn.dispo-orange.active { background: #fff3e0; border-color: #ffb74d; box-shadow: 0 0 0 3px rgba(255,152,0,.12); }
+.rp-dispo-btn.dispo-red.active    { background: #ffebee; border-color: #e57373; box-shadow: 0 0 0 3px rgba(229,57,53,.12); }
+
+/* ── Tabs nav ───────────────────────────────────── */
+.rp-tabs {
+  display: flex;
+  gap: 2px;
+  border-bottom: 2px solid var(--av-border, #e8e4db);
+  margin-bottom: 26px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.rp-tabs::-webkit-scrollbar { display: none; }
+
+.rp-tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 20px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  background: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--av-text2, #6b6456);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+  border-radius: 0;
+}
+.rp-tab:hover { color: var(--av-text1, #1a1814); }
+.rp-tab.active {
+  color: var(--av-gold, #b8912a);
+  border-bottom-color: var(--av-gold, #b8912a);
+  font-weight: 700;
+}
+
+.rp-tab-icon { font-size: 15px; }
+
+.rp-tab-badge {
+  background: #e53935;
+  color: #fff;
+  border-radius: 20px;
+  padding: 1px 7px;
+  font-size: 10px;
+  font-weight: 800;
+  min-width: 18px;
+  text-align: center;
+  animation: rp-pulse 1.6s infinite;
+}
+
+@keyframes rp-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.6; }
+}
+
+/* ── Content ────────────────────────────────────── */
+.rp-content { min-height: 400px; }

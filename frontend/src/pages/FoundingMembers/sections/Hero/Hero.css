@@ -1,0 +1,390 @@
+/* ============================================================
+   FoundingMember.css — Juridika.tn Founding Member Section
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* ---------- CSS Variables ---------- */
+.fm-section {
+  --fm-bg: #0d1520;
+  --fm-bg-card: #12202e;
+  --fm-gold: #c9972c;
+  --fm-gold-light: #e6b84a;
+  --fm-gold-muted: rgba(201, 151, 44, 0.18);
+  --fm-white: #f0ece3;
+  --fm-muted: rgba(240, 236, 227, 0.55);
+  --fm-border: rgba(201, 151, 44, 0.25);
+  --fm-card-bg: rgba(18, 32, 46, 0.85);
+  --fm-progress-track: rgba(255, 255, 255, 0.1);
+  --fm-radius: 14px;
+  --fm-radius-sm: 8px;
+  --fm-font-display: 'Cormorant Garamond', Georgia, serif;
+  --fm-font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ---------- Section Layout ---------- */
+.fm-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #162437;
+  overflow: hidden;
+  padding: 80px 24px;
+}
+
+/* ---------- Ambient Orbs ---------- */
+.fm-bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  animation: fm-orb-drift 12s ease-in-out infinite alternate;
+}
+
+.fm-bg-orb--1 {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(201, 151, 44, 0.12) 0%, transparent 70%);
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 14s;
+}
+
+.fm-bg-orb--2 {
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle, rgba(30, 80, 130, 0.15) 0%, transparent 70%);
+  bottom: 60px;
+  left: 5%;
+  animation-duration: 10s;
+  animation-delay: -4s;
+}
+
+.fm-bg-orb--3 {
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(201, 151, 44, 0.07) 0%, transparent 70%);
+  top: 30%;
+  right: 6%;
+  animation-duration: 16s;
+  animation-delay: -8s;
+}
+
+@keyframes fm-orb-drift {
+  from { transform: translateY(0) scale(1); }
+  to   { transform: translateY(30px) scale(1.05); }
+}
+
+/* ---------- Content ---------- */
+.fm-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 680px;
+  width: 100%;
+  gap: 0;
+  animation: fm-fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fm-fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Badge ---------- */
+.fm-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  animation: fm-fade-up 0.9s 0.1s both;
+}
+
+.fm-badge__line {
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: var(--fm-gold);
+  opacity: 0.7;
+}
+
+.fm-badge__text {
+  font-family: var(--fm-font-body);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--fm-gold);
+  text-transform: uppercase;
+}
+
+/* ---------- Headline ---------- */
+.fm-headline {
+  font-family: var(--fm-font-display);
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.12;
+  color: var(--fm-white);
+  margin: 0 0 24px;
+  animation: fm-fade-up 0.9s 0.18s both;
+}
+
+.fm-headline__accent {
+  font-style: italic;
+  color: var(--fm-gold-light);
+  background: linear-gradient(135deg, var(--fm-gold) 0%, var(--fm-gold-light) 60%, #f0d080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------- Description ---------- */
+.fm-description {
+  font-family: var(--fm-font-body);
+  font-size: clamp(0.9rem, 1.8vw, 1.02rem);
+  line-height: 1.75;
+  color: var(--fm-muted);
+  max-width: 520px;
+  margin: 0 0 40px;
+  animation: fm-fade-up 0.9s 0.26s both;
+}
+
+/* ---------- Stats Card ---------- */
+.fm-stats {
+  display: flex;
+  align-items: stretch;
+  background: var(--fm-card-bg);
+  border: 1px solid var(--fm-border);
+  border-radius: var(--fm-radius);
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  margin-bottom: 36px;
+  box-shadow:
+    0 4px 32px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(201, 151, 44, 0.08) inset;
+  animation: fm-fade-up 0.9s 0.34s both;
+}
+
+.fm-stats__remaining {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #c9972c 0%, #a07020 100%);
+  padding: 28px 36px;
+  min-width: 140px;
+  gap: 4px;
+}
+
+.fm-stats__number {
+  font-family: var(--fm-font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--fm-bg);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.fm-stats__label {
+  font-family: var(--fm-font-body);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: rgba(13, 21, 32, 0.65);
+  text-transform: uppercase;
+}
+
+.fm-stats__divider {
+  width: 1px;
+  background: var(--fm-border);
+  align-self: stretch;
+}
+
+.fm-stats__members {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 32px;
+  gap: 6px;
+}
+
+.fm-stats__members-title {
+  font-family: var(--fm-font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--fm-white);
+}
+
+.fm-stats__members-sub {
+  font-family: var(--fm-font-body);
+  font-size: 0.8rem;
+  color: var(--fm-muted);
+}
+
+/* ---------- Progress Bar ---------- */
+.fm-progress-track {
+  width: 100%;
+  min-width: 160px;
+  height: 4px;
+  background: var(--fm-progress-track);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.fm-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--fm-gold) 0%, var(--fm-gold-light) 100%);
+  border-radius: 99px;
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 0 8px rgba(201, 151, 44, 0.6);
+}
+
+/* ---------- CTA Buttons ---------- */
+.fm-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 22px;
+  animation: fm-fade-up 0.9s 0.42s both;
+}
+
+.fm-btn {
+  font-family: var(--fm-font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--fm-radius-sm);
+  cursor: pointer;
+  padding: 14px 28px;
+  transition:
+    background 0.25s,
+    transform 0.18s,
+    box-shadow 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.02em;
+}
+
+.fm-btn:hover {
+  transform: translateY(-2px);
+}
+
+.fm-btn:active {
+  transform: translateY(0);
+}
+
+.fm-btn--primary {
+  background: linear-gradient(135deg, var(--fm-gold) 0%, #a87020 100%);
+  color: #0d1520;
+  box-shadow: 0 4px 20px rgba(201, 151, 44, 0.35);
+}
+
+.fm-btn--primary:hover {
+  background: linear-gradient(135deg, var(--fm-gold-light) 0%, var(--fm-gold) 100%);
+  box-shadow: 0 6px 28px rgba(201, 151, 44, 0.5);
+}
+
+.fm-btn__arrow {
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.fm-btn--primary:hover .fm-btn__arrow {
+  transform: translateX(4px);
+}
+
+.fm-btn--secondary {
+  background: rgba(240, 236, 227, 0.07);
+  color: var(--fm-white);
+  border: 1px solid rgba(240, 236, 227, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.fm-btn--secondary:hover {
+  background: rgba(240, 236, 227, 0.13);
+  border-color: rgba(201, 151, 44, 0.4);
+}
+
+/* ---------- Deadline ---------- */
+.fm-deadline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+  padding: 7px 18px;
+  animation: fm-fade-up 0.9s 0.5s both;
+}
+
+.fm-deadline__dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--fm-gold-light);
+  box-shadow: 0 0 6px var(--fm-gold-light);
+  flex-shrink: 0;
+  animation: fm-pulse 2s ease-in-out infinite;
+}
+
+@keyframes fm-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.7); }
+}
+
+.fm-deadline__text {
+  font-family: var(--fm-font-body);
+  font-size: 0.75rem;
+  color: var(--fm-muted);
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 540px) {
+  .fm-stats {
+    flex-direction: column;
+  }
+
+  .fm-stats__divider {
+    width: 100%;
+    height: 1px;
+    align-self: auto;
+  }
+
+  .fm-stats__remaining {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 24px;
+    gap: 16px;
+    min-width: unset;
+  }
+
+  .fm-stats__members {
+    padding: 20px 24px;
+  }
+
+  .fm-progress-track {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .fm-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .fm-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font: 'Plus Jakarta Sans', sans-serif;
+
+    /* Hero — sombre avec dégradé comme la référence */
+    --hero-bg-1: #0D1117;
+    --hero-bg-2: #1a1025;
+    /* teinte violacée subtile comme la référence */
+
+    /* Cards */
+    --card-band: #1C2333;
+    /* bande sombre gris-bleu, comme la référence */
+    --card-bg: #FFFFFF;
+    --card-border: #E8EAF0;
+    --card-border-h: #C9A84C;
+
+    /* Palette Juridika */
+    --gold: #C9A84C;
+    --gold-hover: #B8933A;
+    --gold-light: rgba(201, 168, 76, 0.12);
+    --navy: #1B2B4B;
+
+    /* Fond page — très légèrement gris comme la référence */
+    --bg: #F2F3F7;
+    --white: #FFFFFF;
+
+    --ink: #1a2035;
+    --ink-2: #3d4f6e;
+    --ink-3: #7a8baa;
+    --ink-4: #b0bccf;
+    --border: #e2e5ef;
+    --border-2: #c8cfdc;
+
+    /* Badge spécialité */
+    --spec-bg: rgba(201, 168, 76, 0.1);
+    --spec-text: #7a5c1a;
+    --spec-border: rgba(201, 168, 76, 0.3);
+
+    --radius: 12px;
+    --radius-sm: 8px;
+    --ease: all 0.2s ease;
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.07);
+    --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+.ll-root {
+    min-height: 100vh;
+    background: var(--bg);
+    font-family: var(--font);
+    color: var(--ink);
+}
+
+.ll-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* ── HERO ──
+           Dégradé sombre comme la référence : noir → violet très sombre */
+.ll-hero {
+    background: linear-gradient(225deg, #6c7585 0%, #1b263b 60%, #1b263b 100%);
+    padding: 168px 0 44px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Halo de couleur subtil au centre, comme la référence */
+.ll-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(80, 30, 80, 0.25) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+/* Pill résultats */
+.ll-hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.ll-pill-icon {
+    font-size: 11px;
+    color: var(--gold);
+}
+
+.ll-hero-title {
+    font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.ll-hero-sub {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Barre de recherche — exactement comme la référence */
+.ll-searchbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 740px;
+    margin: 0 auto 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.ll-search-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    height: 52px;
+}
+
+.ll-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: 400;
+    color: #222;
+    padding: 0 16px;
+    height: 100%;
+}
+
+.ll-search-input::placeholder {
+    color: #aaa;
+}
+
+.ll-search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    font-size: 15px;
+    padding: 0 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: var(--ease);
+}
+
+.ll-search-btn:hover {
+    color: #333;
+}
+
+.ll-filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 52px;
+    padding: 0 20px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    transition: var(--ease);
+    white-space: nowrap;
+}
+
+.ll-filter-btn:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* Selects */
+.ll-filter-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.ll-select-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+}
+
+.ll-select-wrap select {
+    appearance: none;
+    outline: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    padding: 0 36px 0 14px;
+    height: 44px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    transition: var(--ease);
+}
+
+.ll-select-wrap select option {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.ll-select-wrap select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-light);
+}
+
+.ll-chevron {
+    position: absolute;
+    right: 12px;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+.ll-clear-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    height: 44px;
+    padding: 0 14px;
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: var(--ease);
+    white-space: nowrap;
+}
+
+.ll-clear-btn:hover {
+    background: rgba(255, 80, 80, 0.15);
+    border-color: rgba(255, 80, 80, 0.3);
+    color: #ff8080;
+}
+
+/* ── BODY ── */
+.ll-body {
+    padding: 28px 0 80px;
+}
+
+.ll-results-bar {
+    font-size: 15px;
+    color: var(--ink-2);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.ll-results-bar strong {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+/* States */
+.ll-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 360px;
+    gap: 14px;
+    text-align: center;
+}
+
+.ll-spinner {
+    width: 34px;
+    height: 34px;
+    border: 2px solid var(--border);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite;
+}
+
+.ll-state p {
+    font-size: 14px;
+    color: var(--ink-3);
+}
+
+.ll-empty-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.ll-empty-sub {
+    font-size: 14px;
+    color: var(--ink-3);
+    max-width: 300px;
+}
+
+/* ── GRID ── */
+.ll-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+/* ── CARD ── */
+.ll-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+    animation: fadeUp 0.35s ease both;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.2s ease;
+}
+
+.ll-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--card-border-h);
+}
+
+/* Bande sombre + avatar centré flottant — identique à la référence */
+.ll-card-band {
+    background: var(--card-band);
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.ll-avatar {
+    width: 68px;
+    height: 68px;
+    background: #1b263b;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -34px;
+    box-shadow: 0 4px 16px rgba(201, 168, 76, 0.4);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    z-index: 1;
+}
+
+.ll-card:hover .ll-avatar {
+    box-shadow: 0 6px 22px rgba(201, 168, 76, 0.55);
+    transform: scale(1.04);
+}
+
+.ll-avatar span {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+/* Corps de la card */
+.ll-card-body {
+    padding: 46px 20px 14px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.ll-card-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.ll-card-spec {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--spec-text);
+    background: var(--spec-bg);
+    border: 1px solid var(--spec-border);
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.ll-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 4px;
+    width: 100%;
+    align-items: center;
+}
+
+.ll-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: var(--ink-3);
+    font-weight: 400;
+}
+
+.ll-meta-item svg {
+    font-size: 12px;
+    color: var(--ink-4);
+}
+
+.ll-meta-item strong {
+    color: var(--ink-2);
+    font-weight: 600;
+}
+
+.ll-langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.ll-lang {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--ink-3);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+/* ── ACTIONS ── */
+.ll-card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 18px 18px;
+    border-top: 1px solid var(--border);
+}
+
+.ll-btn-primary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--gold);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--ease);
+    letter-spacing: 0.01em;
+}
+
+.ll-btn-primary:hover {
+    background: var(--gold-hover);
+    box-shadow: 0 4px 14px rgba(201, 168, 76, 0.35);
+}
+
+.ll-btn-primary svg {
+    font-size: 13px;
+}
+
+.ll-btn-ghost {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: transparent;
+    color: var(--ink-2);
+    border: 1.5px solid var(--border-2);
+    border-radius: var(--radius-sm);
+    padding: 11px 16px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--ease);
+}
+
+.ll-btn-ghost:hover {
+    border-color: var(--navy);
+    color: var(--navy);
+    background: rgba(27, 43, 75, 0.04);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+    .ll-container {
+        padding: 0 20px;
+    }
+
+    .ll-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    .ll-searchbar {
+        flex-direction: column;
+    }
+
+    .ll-search-wrap,
+    .ll-filter-btn {
+        width: 100%;
+    }
+
+    .ll-filter-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ll-select-wrap,
+    .ll-select-wrap select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .ll-clear-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ll-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .ll-card-band {
+        height: 76px;
+    }
+
+    .ll-avatar {
+        width: 58px;
+        height: 58px;
+        font-size: 20px;
+        bottom: -29px;
+    }
+
+    .ll-card-body {
+        padding: 40px 14px 12px;
+    }
+
+    .ll-card-actions {
+        padding: 10px 14px 14px;
+    }
+}
+
+@media (max-width: 440px) {
+    .ll-grid {
+        grid-template-columns: 1fr;
+    }
+}
