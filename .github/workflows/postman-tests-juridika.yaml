@@ -7,7 +7,7 @@ on:
 
 jobs:
   newman-tests:
-    runs-on: [self-hosted, windows]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -24,50 +24,74 @@ jobs:
           npm install -g newman-reporter-htmlextra
 
       - name: Create reports folder
-        run: New-Item -ItemType Directory -Force -Path reports | Out-Null
+        run: mkdir -p reports
 
       - name: Validate required secrets
-        shell: pwsh
         run: |
-          if (-not "${{ secrets.JURIDIKA_TEST_EMAIL }}") { throw "Missing secret: JURIDIKA_TEST_EMAIL" }
-          if (-not "${{ secrets.JURIDIKA_TEST_PASSWORD }}") { throw "Missing secret: JURIDIKA_TEST_PASSWORD" }
+          test -n "${{ secrets.JURIDIKA_MONGO_URI }}" || { echo "Missing secret: JURIDIKA_MONGO_URI"; exit 1; }
+          test -n "${{ secrets.JURIDIKA_JWT_SECRET }}" || { echo "Missing secret: JURIDIKA_JWT_SECRET"; exit 1; }
+          test -n "${{ secrets.JURIDIKA_TEST_EMAIL }}" || { echo "Missing secret: JURIDIKA_TEST_EMAIL"; exit 1; }
+          test -n "${{ secrets.JURIDIKA_TEST_PASSWORD }}" || { echo "Missing secret: JURIDIKA_TEST_PASSWORD"; exit 1; }
 
-      - name: Wait for local backend
-        shell: pwsh
+      - name: Install backend dependencies
+        working-directory: backend
         run: |
-          $maxAttempts = 12
-          for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
-            try {
-              $response = Invoke-WebRequest -Uri "http://localhost:4000/" -UseBasicParsing -TimeoutSec 5
-              if ($response.StatusCode -ge 200 -and $response.StatusCode -lt 500) {
-                Write-Host "Backend reachable at http://localhost:4000"
-                exit 0
-              }
-            } catch {
-              Write-Host "Backend not ready yet. Attempt $attempt/$maxAttempts"
-            }
-            Start-Sleep -Seconds 5
-          }
-          throw "Backend is not reachable at http://localhost:4000"
+          npm ci
+
+      - name: Start backend
+        working-directory: backend
+        env:
+          MONGO_URI: ${{ secrets.JURIDIKA_MONGO_URI }}
+          PORT: 4000
+          JWT_SECRET: ${{ secrets.JURIDIKA_JWT_SECRET }}
+          FRONTEND_URL: http://localhost:3001
+          CLOUDINARY_CLOUD_NAME: dummy
+          CLOUDINARY_API_KEY: dummy
+          CLOUDINARY_API_SECRET: dummy
+          TWILIO_ACCOUNT_SID: dummy
+          TWILIO_AUTH_TOKEN: dummy
+          TWILIO_VERIFY_SERVICE_SID: dummy
+          TWILIO_PHONE_NUMBER: +10000000000
+          EMAIL_USER: dummy@example.com
+          EMAIL_PASS: dummy
+          FLOUCI_APP_TOKEN: dummy
+          FLOUCI_APP_SECRET: dummy
+          MESSAGE_ENCRYPTION_KEY: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+          GEMINI_API_KEY: dummy
+        run: |
+          nohup node server.js > ../reports/backend.log 2>&1 &
+          echo $! > ../reports/backend.pid
+
+      - name: Wait for backend
+        run: |
+          for attempt in {1..12}; do
+            if curl --fail --silent http://127.0.0.1:4000/ > /dev/null; then
+              exit 0
+            fi
+            echo "Backend not ready yet. Attempt $attempt/12"
+            sleep 5
+          done
+          echo "Backend did not become ready"
+          cat reports/backend.log || true
+          exit 1
 
       - name: Run Postman collection
         id: newman
         continue-on-error: true
-        shell: pwsh
         run: |
-          & newman run "postman/Juridika Auth.postman_collection.json" `
-            --folder "CI - Login Smoke" `
-            --env-var "baseUrl=http://localhost:4000" `
-            --env-var "avocatEmail=${{ secrets.JURIDIKA_TEST_EMAIL }}" `
-            --env-var "avocatPassword=${{ secrets.JURIDIKA_TEST_PASSWORD }}" `
-            --reporters cli,htmlextra,junit,json `
-            --reporter-htmlextra-export reports/newman-report.html `
-            --reporter-junit-export reports/newman-report.xml `
+          newman run "postman/Juridika Auth.postman_collection.json" \
+            --folder "CI - Login Smoke" \
+            --env-var "baseUrl=http://127.0.0.1:4000" \
+            --env-var "avocatEmail=${{ secrets.JURIDIKA_TEST_EMAIL }}" \
+            --env-var "avocatPassword=${{ secrets.JURIDIKA_TEST_PASSWORD }}" \
+            --reporters cli,htmlextra,junit,json \
+            --reporter-htmlextra-export reports/newman-report.html \
+            --reporter-junit-export reports/newman-report.xml \
             --reporter-json-export reports/newman-report.json
-          "exit_code=$LASTEXITCODE" >> $env:GITHUB_OUTPUT
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
 
       - name: Generate Markdown report from JSON
-        if: always()
+        if: always() && hashFiles('reports/newman-report.json') != ''
         run: node .github/workflows/generate-newman-markdown.js reports/newman-report.json reports/newman-report.md
 
       - name: Upload test reports
@@ -79,6 +103,6 @@ jobs:
 
       - name: Fail workflow if Newman failed
         if: always() && steps.newman.outputs.exit_code != '0'
-        shell: pwsh
         run: |
-          throw "Newman tests failed with exit code ${{ steps.newman.outputs.exit_code }}"
+          echo "Newman tests failed with exit code ${{ steps.newman.outputs.exit_code }}"
+          exit 1
