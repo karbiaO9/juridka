@@ -1,0 +1,84 @@
+name: Run Postman API Tests - JURIDIKA
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  newman-tests:
+    runs-on: [self-hosted, windows]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Newman
+        run: |
+          npm install -g newman
+          npm install -g newman-reporter-htmlextra
+
+      - name: Create reports folder
+        run: New-Item -ItemType Directory -Force -Path reports | Out-Null
+
+      - name: Validate required secrets
+        shell: pwsh
+        run: |
+          if (-not "${{ secrets.JURIDIKA_TEST_EMAIL }}") { throw "Missing secret: JURIDIKA_TEST_EMAIL" }
+          if (-not "${{ secrets.JURIDIKA_TEST_PASSWORD }}") { throw "Missing secret: JURIDIKA_TEST_PASSWORD" }
+
+      - name: Wait for local backend
+        shell: pwsh
+        run: |
+          $maxAttempts = 12
+          for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
+            try {
+              $response = Invoke-WebRequest -Uri "http://localhost:4000/" -UseBasicParsing -TimeoutSec 5
+              if ($response.StatusCode -ge 200 -and $response.StatusCode -lt 500) {
+                Write-Host "Backend reachable at http://localhost:4000"
+                exit 0
+              }
+            } catch {
+              Write-Host "Backend not ready yet. Attempt $attempt/$maxAttempts"
+            }
+            Start-Sleep -Seconds 5
+          }
+          throw "Backend is not reachable at http://localhost:4000"
+
+      - name: Run Postman collection
+        id: newman
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          & newman run "postman/Juridika Auth.postman_collection.json" `
+            --folder "CI - Login Smoke" `
+            --env-var "baseUrl=http://localhost:4000" `
+            --env-var "avocatEmail=${{ secrets.JURIDIKA_TEST_EMAIL }}" `
+            --env-var "avocatPassword=${{ secrets.JURIDIKA_TEST_PASSWORD }}" `
+            --reporters cli,htmlextra,junit,json `
+            --reporter-htmlextra-export reports/newman-report.html `
+            --reporter-junit-export reports/newman-report.xml `
+            --reporter-json-export reports/newman-report.json
+          "exit_code=$LASTEXITCODE" >> $env:GITHUB_OUTPUT
+
+      - name: Generate Markdown report from JSON
+        if: always()
+        run: node .github/workflows/generate-newman-markdown.js reports/newman-report.json reports/newman-report.md
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: postman-test-reports-JURIDIKA
+          path: reports/
+
+      - name: Fail workflow if Newman failed
+        if: always() && steps.newman.outputs.exit_code != '0'
+        shell: pwsh
+        run: |
+          throw "Newman tests failed with exit code ${{ steps.newman.outputs.exit_code }}"
